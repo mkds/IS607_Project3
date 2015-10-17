@@ -52,3 +52,5 @@ for (i in 1:length(best_edit$Nominee)) {
   best_edit$Nominee[i] <- split_up[[i]][1]
   best_edit$'Additional Info'[i] <- split_up[[i]][2]
 }
+
+write.csv(best_edit, "Data/film_editing_2011-14.csv", row.names=FALSE)
