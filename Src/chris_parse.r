@@ -10,7 +10,7 @@ edit_frame <- data.frame(edit_txt,
                          str_detect(edit_txt, "[0-9]{4} \\([0-9]{2}th\\)"),
                          str_detect(edit_txt, "(^[A-Z]{3})|\\([A-Z a-z]+\\)$"),
                          stringsAsFactors = FALSE)
-
+View(edit_frame)
 colnames(edit_frame) <-  c("text", "year?", "category?")
 
 year_counter = ""
@@ -43,7 +43,7 @@ edit_frame1$`category?` = NULL
 edit_frame1[,"Additional Info"] = NA
 edit_frame1$`winner?`[which(is.na(edit_frame1$`winner?`))] <- "no"
 #remove the blanks
-
+View(best_edit)
 best_edit <- data.frame(edit_frame1$year, 
                         edit_frame1$category, 
                         edit_frame1$text, 
@@ -59,6 +59,7 @@ for (i in 1:length(best_edit$Nominee)) {
   best_edit$Nominee[i] <- split_up[[i]][1]
   best_edit$'Additional Info'[i] <- split_up[[i]][2]
 }
-
-
+# replace , with ;
+best_edit$`Additional Info` <- str_replace_all(best_edit$`Additional Info`,",",";")
+best_edit$Nominee <- str_replace_all(best_edit$Nominee,",",";")
 write.csv(best_edit, "Data_All_2011-14.csv", row.names=FALSE, quote=FALSE)
