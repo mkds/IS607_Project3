@@ -21065,4 +21065,23 @@ ALTER TABLE master_normalized
 DROP COLUMN Nominee;
 
 
+-- create project 3 view
+DROP VIEW if EXISTS project;
+
+CREATE VIEW project AS 
+SELECT Year, Category, Nominee, Won
+FROM master
+WHERE   (Category = "BEST PICTURE") OR
+        (Category = "ACTOR") OR
+        (Category = "ACTRESS") OR
+        (Category = "ACTOR IN A LEADING ROLE") OR
+        (Category = "ACTOR IN A SUPPORTING ROLE") OR
+        (Category = "ACTRESS IN A LEADING ROLE") OR
+        (Category = "ACTRESS IN A SUPPORTING ROLE") OR
+        (Category = "CINEMATOGRAPHY") OR
+        (Category = "DIRECTING") OR
+        (Category = "FILM EDITING") OR
+        (Category = "SOUND EDITING") OR
+        (Category = "SOUND MIXING") OR
+        (Category = "COSTUME DESIGN");
 
