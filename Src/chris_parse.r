@@ -69,5 +69,5 @@ for (i in 1:length(best_edit$Nominee)) {
 # replace , with ;
 best_edit$`Additional Info` <- str_replace_all(best_edit$`Additional Info`,",",";")
 best_edit$Nominee <- str_replace_all(best_edit$Nominee,",",";")
-best_edit$Category <- str_replace_all(best_edit$Nominee,",",";")
+best_edit$Category <- str_replace_all(best_edit$Category,",",";")
 write.csv(best_edit, "Data_All_2011-14.csv", row.names=FALSE, quote=FALSE)
