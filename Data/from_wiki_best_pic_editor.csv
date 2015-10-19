@@ -1,0 +1,485 @@
+"","Film","Production_Company","Producers","Year","Best_Pic_Oscar","Editor","Edit_Oscar"
+"1","Birdman or (The Unexpected Virtue of Ignorance)","Fox Searchlight, Regency Enterprises, Worldview Entertainment","Alejandro G. Iñárritu, John Lesher and James W. Skotchdopole",2014,"t",NA,NA
+"2","American Sniper","Warner Bros., Village Roadshow Pictures, Mad Chance Productions, 22nd and Indiana Pictures, Malpaso","Clint Eastwood, Andrew Lazar, Robert Lorenz, Bradley Cooper, and Peter Morgan",2014,"f","Joel Cox and Gary D. Roach","f"
+"3","Boyhood","IFC Films","Richard Linklater and Cathleen Sutherland",2014,"f","Sandra Adair","f"
+"4","The Grand Budapest Hotel","Fox Searchlight, American Empirical Pictures, Indian Paintbrush, Babelsberg Studio","Wes Anderson, Scott Rudin, Steven Rales, and Jeremy Dawson",2014,"f","Barney Pilling","f"
+"5","The Imitation Game","The Weinstein Co., Black Bear Pictures, Bristol Automotive, StudioCanal","Nora Grossman, Ido Ostrowsky, and Teddy Schwarzman",2014,"f","William Goldenberg","f"
+"6","Selma","Paramount, Pathé, Cloud Eight Films, Plan B Entertainment, Harpo Films","Christian Colson, Oprah Winfrey, Dede Gardner, and Jeremy Kleiner",2014,"f",NA,NA
+"7","The Theory of Everything","Focus Features, Working Title","Tim Bevan, Eric Fellner, Lisa Bruce, and Anthony McCarten",2014,"f",NA,NA
+"8","Whiplash","Sony Pictures Classics, Bold Films, Blumhouse Productions, Right of Way Films","Jason Blum, Helen Estabrook, and David Lancaster",2014,"f","Tom Cross","t"
+"9","12 Years a Slave","Fox Searchlight, Regency Enterprises, River Road Entertainment, Plan B Entertainment, New Regency, Film4 Productions","Brad Pitt, Dede Gardner, Jeremy Kleiner, Steve McQueen, and Anthony Katagas",2013,"t","Joe Walker","f"
+"10","American Hustle","Columbia, Atlas Entertainment, Annapurna Pictures","Charles Roven, Richard Suckle, Megan Ellison, and Jonathan Gordon",2013,"f","Jay Cassidy, Crispin Struthers and Alan Baumgarten","f"
+"11","Captain Phillips","Columbia, Michael De Luca Productions, Scott Rudin Productions, Trigger Street","Scott Rudin, Dana Brunetti, and Michael De Luca",2013,"f","Christopher Rouse","f"
+"12","Dallas Buyers Club","Focus Features, Truth Entertainment, Voltage Pictures","Robbie Brenner and Rachel Winter",2013,"f","John Mac McMurphy and Martin Pensa","f"
+"13","Gravity","Warner Bros., Esperanto Filmoj, Heyday Films","Alfonso Cuarón and David Heyman",2013,"f","Alfonso Cuarón and Mark Sanger","t"
+"14","Her","Warner Bros., Entertainment Film Distributors, Annapurna Pictures","Megan Ellison, Spike Jonze, and Vincent Landay",2013,"f",NA,NA
+"15","Nebraska","Paramount Vantage, FilmNation Entertainment","Albert Berger and Ron Yerxa",2013,"f",NA,NA
+"16","Philomena","The Weinstein Co., Pathé, BBC Films, British Film Institute, Canal+, Cine+, Baby Cow Productions, Magnolia Mae Films","Gabrielle Tana, Steve Coogan, and Tracey Seaward",2013,"f",NA,NA
+"17","The Wolf of Wall Street","Paramount, Universal, Red Granite Pictures, Appian Way Productions, Sikelia Productions, Emjag Productions","Martin Scorsese, Leonardo DiCaprio, Joey McFarland, and Emma Tillinger Koskoff",2013,"f",NA,NA
+"18","Argo","Warner Bros., GK Films, Smoke House Pictures","Grant Heslov, Ben Affleck, and George Clooney",2012,"t","William Goldenberg","t"
+"19","Amour[K]","Sony Pictures Classics, Les Films du Losange, X Filme Creative Pool, Wega Film Production","Margaret Menegoz, Stefan Arndt, Veit Heiduschka, and Michael Katz",2012,"f",NA,NA
+"20","Beasts of the Southern Wild","Fox Searchlight, Cinereach","Dan Janvey, Josh Penn, and Michael Gottwald",2012,"f",NA,NA
+"21","Django Unchained","The Weinstein Co., Columbia, Band Apart","Stacey Sher, Reginald Hudlin, and Pilar Savone",2012,"f",NA,NA
+"22","Les Misérables","Universal, Working Title, Cameron Mackintosh Limited","Tim Bevan, Eric Fellner, Debra Hayward, and Cameron Mackintosh",2012,"f",NA,NA
+"23","Life of Pi","20th Century Fox, Dune Entertainment, Ingenious Media, Haishang Films","Gil Netter, Ang Lee, and David Womark",2012,"f","Tim Squyres","f"
+"24","Lincoln","DreamWorks, Touchstone, 20th Century Fox, Amblin Entertainment","Steven Spielberg and Kathleen Kennedy",2012,"f","Michael Kahn","f"
+"25","Silver Linings Playbook","The Weinstein Co.","Donna Gigliotti, Bruce Cohen, and Jonathan Gordon",2012,"f","Jay Cassidy and Crispin Struthers","f"
+"26","Zero Dark Thirty","Columbia, Annapurna Pictures","Mark Boal, Kathryn Bigelow, and Megan Ellison",2012,"f","Dylan Tichenor and William Goldenberg","f"
+"27","The Artist","The Weinstein Co., Warner Bros., Entertainment Film Distributors, La Petite Reine, ARP Sélection, Studio 37, La Class Americane, France 3 Cinema, U Film, Jouror Productions, JD Prod, Wild Bunch","Thomas Langmann",2011,"t","Anne-Sophie Bion and Michel Hazanavicius","f"
+"28","The Descendants","Fox Searchlight","Jim Burke, Alexander Payne, and Jim Taylor",2011,"f","Kevin Tent","f"
+"29","Extremely Loud and Incredibly Close","Warner Bros., Scott Rudin Productions","Scott Rudin",2011,"f",NA,NA
+"30","The Help","DreamWorks, Touchstone, Participant Media, Imageation Abu Dahbi","Brunson Green, Chris Columbus, and Michael Barnathan",2011,"f",NA,NA
+"31","Hugo","Paramount, GK Films, Infinitum Nihil","Graham King and Martin Scorsese",2011,"f","Thelma Schoonmaker","f"
+"32","Midnight in Paris","Sony Pictures Classics","Letty Aronson and Stephen Tenenbaum",2011,"f",NA,NA
+"33","Moneyball","Columbia, Scott Rudin Productions, Michael De Luca Productions","Michael De Luca, Rachael Horovitz, and Brad Pitt",2011,"f","Christopher Tellefsen","f"
+"34","The Tree of Life","Fox Searchlight, River Road Entertainment","Sarah Green, Bill Pohlad, Dede Gardner, and Grant Hill",2011,"f",NA,NA
+"35","War Horse","DreamWorks, Touchstone, Amblin Entertainment","Steven Spielberg and Kathleen Kennedy",2011,"f",NA,NA
+"36","The King's Speech","The Weinstein Co., Momentum Pictures, UK Film Council, See-Saw Films, Bedlam Productions","Iain Canning, Emile Sherman, and Gareth Unwin",2010,"t","Tariq Anwar","f"
+"37","Black Swan","Fox Searchlight, Dune Entertainment, Cross Creek Pictures, Phoenix Pictures","Scott Franklin, Mike Medavoy, and Brian Oliver",2010,"f","Andrew Weisblum","f"
+"38","The Fighter","The Weinstein Co., Paramount, Mandeville Films","David Hoberman, Todd Lieberman, and Mark Wahlberg",2010,"f","Pamela Martin","f"
+"39","Inception","Warner Bros., Legendary Pictures, Syncopy","Christopher Nolan and Emma Thomas",2010,"f",NA,NA
+"40","The Kids Are All Right","Focus Features, Gilbert Films","Gary Gilbert, Jeffrey Levy-Hinte, and Celine Rattray",2010,"f",NA,NA
+"41","127 Hours","Fox Searchlight, Pathé, Dune Entertainment, Everest Entertainment","Danny Boyle, John Smithson, and Christian Colson",2010,"f","Jon Harris","f"
+"42","The Social Network","Columbia, Scott Rudin Productions, Trigger Street Productions","Dana Brunetti, Ceán Chaffin, Michael De Luca, and Scott Rudin",2010,"f","Angus Wall and Kirk Baxter","t"
+"43","Toy Story 3","Disney, Pixar","Darla K. Anderson",2010,"f",NA,NA
+"44","True Grit","Paramount, Skydance Productions, Mike Zoss Productions","Joel Coen, Ethan Coen, and Scott Rudin",2010,"f",NA,NA
+"45","Winter's Bone","Roadside Attractions","Alix Madigan and Anne Rosellini",2010,"f",NA,NA
+"46","The Hurt Locker","Summit Entertainment, Voltage Pictures, First Light Productions, Kingsgate Films","Kathryn Bigelow, Mark Boal, Nicolas Chartier, and Greg Shapiro",2009,"t","Chris Innis and Bob Murawski","t"
+"47","Avatar","20th Century Fox, Lightstorm Entertainment, Dune Entertainment, Ingenious Media","James Cameron and Jon Landau",2009,"f","James Cameron, John Refoua, and Stephen E. Rivkin","f"
+"48","The Blind Side","Warner Bros., Alcon Entertainment","Gil Netter, Andrew A. Kosove, and Broderick Johnson",2009,"f",NA,NA
+"49","District 9","Tristar, WingNut Films","Peter Jackson and Carolynne Cunningham",2009,"f","Julian Clarke","f"
+"50","An Education","Sony Pictures Classics, Finola Dwyer Productions, Wildgaze Films","Finola Dwyer and Amanda Posey",2009,"f",NA,NA
+"51","Inglourious Basterds","The Weinstein Co., Universal, Band Apart, Zehnte Babelsberg Film","Lawrence Bender",2009,"f","Sally Menke","f"
+"52","Precious: Based on the Novel ""Push"" by Sapphire","Lionsgate, Lee Daniels Entertainment, Smokewood Entertainment","Lee Daniels, Sarah Siegel-Magness, and Gary Magness",2009,"f",NA,NA
+"53","A Serious Man","Focus Features, Working Title, Mike Zoss Productions","Joel Coen and Ethan Coen",2009,"f",NA,NA
+"54","Up","Disney, Pixar","Jonas Rivera",2009,"f",NA,NA
+"55","Up in the Air","Paramount, The Montecito Picture Company","Daniel Dubiecki, Ivan Reitman, and Jason Reitman",2009,"f",NA,NA
+"56","Slumdog Millionaire[O]","Fox Searchlight, Warner Bros., Celador, Film4","Christian Colson",2008,"t",NA,NA
+"57","The Curious Case of Benjamin Button","Paramount, Warner Bros., Kennedy/Marshall Productions","Kathleen Kennedy, Frank Marshall, and Cean Chaffin",2008,"f","Kirk Baxter and Angus Wall","f"
+"58","Frost/Nixon","Universal, Imagine Entertainment, Working Title","Ron Howard, Brian Grazer, and Eric Fellner",2008,"f","Mike Hill and Dan Hanley","f"
+"59","Milk","Focus Features, Jinks/Cohen Co., Groundswell","Bruce Cohen and Dan Jinks",2008,"f","Elliot Graham","f"
+"60","The Reader","The Weinstein Co., Mirage, Neunte Babelsberg Film","Anthony Minghella, Sydney Pollack, Donna Gigliotti, and Redmond Morris",2008,"f",NA,NA
+"61","No Country for Old Men","Paramount Vantage, Miramax, Mike Zoss Productions","Scott Rudin, Joel Coen, and Ethan Coen",2007,"t","Roderick Jaynes","f"
+"62","Atonement","Universal, Working Title","Tim Bevan, Eric Fellner, and Paul Webster",2007,"f",NA,NA
+"63","Juno","Fox Searchlight, Mr. Mudd","Lianne Halfon, Mason Novick, and Russell Smith",2007,"f",NA,NA
+"64","Michael Clayton","Warner Bros., Castle Rock Entertainment, Section Eight Productions, Mirage Enterprises","Jennifer Fox, Kerry Orent, and Sydney Pollack",2007,"f",NA,NA
+"65","There Will Be Blood","Paramount Vantage, Miramax","Paul Thomas Anderson, Daniel Lupi, and JoAnne Sellar",2007,"f","Dylan Tichenor","f"
+"66","The Departed","Warner Bros., Plan B Pictures, Initial Entertainment Group, Vertigo Entertainment","Graham King",2006,"t","Thelma Schoonmaker","t"
+"67","Babel","Paramount Vantage, Anonymous Content, Zeta Film","Alejandro González Iñárritu, Steve Golin, and Jon Kilik",2006,"f","Douglas Crise and Stephen Mirrione","f"
+"68","Letters from Iwo Jima[K]","DreamWorks, Warner Bros., Malpaso, Amblin Entertainment","Clint Eastwood, Steven Spielberg, and Robert Lorenz",2006,"f",NA,NA
+"69","Little Miss Sunshine","Fox Searchlight, Big Beach, Deep River Productions","David T. Friendly, Peter Saraf, and Marc Turtletaub",2006,"f",NA,NA
+"70","The Queen","Miramax, Granada Productions","Andy Harries, Christine Langan, and Tracey Seaward",2006,"f",NA,NA
+"71","Crash","Lionsgate, BlackFriar's Bridge, Harris Company, ApolloProScreen","Paul Haggis and Cathy Schulman",2005,"t","Hughes Winborne","t"
+"72","Brokeback Mountain","Focus Features, River Road Entertainment","Diana Ossana and James Schamus",2005,"f",NA,NA
+"73","Capote","Sony Pictures Classics, United Artists, A-Line Pictures, Cooper's Town Productions, Infinity Media","Caroline Baron, William Vince, and Michael Ohoven",2005,"f",NA,NA
+"74","Good Night, and Good Luck","Warner Independent, Section Eight Productions, 2929 Entertainment","Grant Heslov",2005,"f",NA,NA
+"75","Munich","DreamWorks, Universal, Amblin Entertainment, Kennedy/Marshall Productions","Steven Spielberg, Kathleen Kennedy, and Barry Mendel",2005,"f","Michael Kahn","f"
+"76","Million Dollar Baby","Warner Bros., Lakeshore Entertainment, Malpaso","Clint Eastwood, Albert S. Ruddy, and Tom Rosenberg",2004,"t","Joel Cox","f"
+"77","The Aviator","Warner Bros., Miramax, Forward Pass, Appian Way","Michael Mann and Graham King",2004,"f","Thelma Schoonmaker","t"
+"78","Finding Neverland","Miramax, Filmcolony","Richard N. Gladstein and Nellie Bellflower",2004,"f","Matt Chesse","f"
+"79","Ray","Universal, Britsol Bay Productions, Anvil Films","Taylor Hackford, Stuart Benjamin, and Howard Baldwin",2004,"f","Paul Hirsch","f"
+"80","Sideways","Fox Searchlight","Michael London",2004,"f",NA,NA
+"81","The Lord of the Rings: The Return of the King","New Line Cinema, WingNut Films","Barrie M. Osborne, Peter Jackson, and Fran Walsh",2003,"t","Jamie Selkirk","t"
+"82","Lost in Translation","Focus Features, American Zoetrope","Ross Katz and Sofia Coppola",2003,"f",NA,NA
+"83","Master and Commander: The Far Side of the World","20th Century Fox, Miramax, Universal, Samuel Goldlwyn Films","Samuel Goldwyn, Jr., Peter Weir, and Duncan Henderson",2003,"f","Lee Smith","f"
+"84","Mystic River","Warner Bros.,Village Roadshow Pictures, Malpaso","Robert Lorenz, Judie G. Hoyt, and Clint Eastwood",2003,"f",NA,NA
+"85","Seabiscuit","DreamWorks, Universal, Spyglass Entertainment, Kennedy/Marshall Productions","Kathleen Kennedy, Frank Marshall, and Gary Ross",2003,"f","William Goldenberg","f"
+"86","Chicago","Miramax, Producer Circle Co., Storyline Entertainment","Martin Richards",2002,"t","Martin Walsh","t"
+"87","Gangs of New York","Miramax","Alberto Grimaldi and Harvey Weinstein",2002,"f","Thelma Schoonmaker","f"
+"88","The Hours","Paramount, Miramax, Scott Rudin Productions","Scott Rudin and Robert Fox",2002,"f","Peter Boyle","f"
+"89","The Lord of the Rings: The Two Towers","New Line Cinema, WingNut Films","Barrie M. Osborne, Fran Walsh, and Peter Jackson",2002,"f","Michael Horton","f"
+"90","The Pianist","Focus Features, RP Productions, Heritage Films, Babelsberg Studios, Runteam","Roman Polanski, Robert Benmussa, and Alain Sarde",2002,"f","Hervé de Luze","f"
+"91","A Beautiful Mind","DreamWorks, Universal, Imagine Entertainment","Brian Grazer and Ron Howard",2001,"t","Mike Hill and Daniel P. Hanley","f"
+"92","Gosford Park","USA, Sandcastle 5 Productions, Zestwick","Robert Altman, Bob Balaban, and David Levy",2001,"f",NA,NA
+"93","In the Bedroom","Miramax, Good Machine","Graham Leader, Ross Katz, and Todd Field",2001,"f",NA,NA
+"94","The Lord of the Rings: The Fellowship of the Ring","New Line Cinema, WingNut Films","Peter Jackson, Fran Walsh, and Barrie M. Osborne",2001,"f","John Gilbert","f"
+"95","Moulin Rouge!","20th Century Fox, Bazmark","Martin Brown, Baz Luhrmann, and Fred Baron",2001,"f","Jill Bilcock","f"
+"96","Gladiator","DreamWorks, Universal, Scott Free Productions, Red Wagon Entertainment","Douglas Wick, David Franzoni, and Branko Lustig",2000,"t","Pietro Scalia","f"
+"97","Chocolat","Miramax","David Brown, Kit Golden, and Leslie Holleran",2000,"f",NA,NA
+"98","Crouching Tiger, Hidden Dragon[K]","Sony Pictures Classics","William Kong, Hsu Li Kong, and Ang Lee",2000,"f",NA,NA
+"99","Erin Brockovich","Universal, Columbia, Jersey Films","Danny DeVito, Michael Shamberg, and Stacey Sher",2000,"f",NA,NA
+"100","Traffic","Universal, USA, Bedford Falls Company","Edward Zwick, Marshall Herskovitz, and Laura Bickford",2000,"f","Stephen Mirrione","t"
+"101","American Beauty","DreamWorks, Jinks/Cohen Co.","Bruce Cohen and Dan Jinks",1999,"t","Tariq Anwar","f"
+"102","The Cider House Rules","Miramax, FilmColony","Richard N. Gladstein",1999,"f","Lisa Zeno Churgin","f"
+"103","The Green Mile","Warner Bros., Castle Rock Entertainment","Frank Darabont and David Valdes",1999,"f",NA,NA
+"104","The Insider","Touchstone, Spyglass Entertainment","Pieter Jan Brugge and Michael Mann",1999,"f","William Goldenberg, Paul Rubell, and David Rosenbloom","f"
+"105","The Sixth Sense","Hollywood, Spyglass Entertainment","Frank Marshall, Kathleen Kennedy, and Barry Mendel",1999,"f","Andrew Mondshein","f"
+"106","Shakespeare in Love","Miramax, Universal, Bedford Falls Company","David Parfitt, Donna Gigliotti, Harvey Weinstein, Edward Zwick, and Marc Norman",1998,"t","David Gamble","f"
+"107","Elizabeth","PolyGram, Gramercy","Alison Owen, Eric Fellner, and Tim Bevan",1998,"f",NA,NA
+"108","Life Is Beautiful[K]","Miramax, Melampo Cinematografica, Pacific Pictures","Elda Ferri and Gianluigi Braschi",1998,"f",NA,NA
+"109","Saving Private Ryan","DreamWorks, Paramount, Amblin Entertainment","Steven Spielberg, Ian Bryce, Mark Gordon, and Gary Levinsohn",1998,"f","Michael Kahn","t"
+"110","The Thin Red Line","20th Century Fox","Robert Michael Geisler, John Roberdeau, and Grant Hill",1998,"f","Billy Weber, Leslie Jones, and Saar Klein","f"
+"111","Titanic","Paramount, 20th Century Fox, Lightstorm Entertainment","James Cameron and Jon Landau",1997,"t","Conrad Buff, James Cameron, and Richard A. Harris","t"
+"112","As Good as It Gets","Tristar, Gracie Films","James L. Brooks, Bridget Johnson, Kristi Zea",1997,"f","Richard Marks","f"
+"113","The Full Monty","Fox Searchlight, Redwave Films","Umberto Pasolini",1997,"f",NA,NA
+"114","Good Will Hunting","Miramax, A Band Apart","Lawrence Bender",1997,"f","Pietro Scalia","f"
+"115","L.A. Confidential","Warner Bros., Regency Enterprises","Curtis Hanson, Arnon Milchan, and Michael G. Nathanson",1997,"f","Peter Honess","f"
+"116","The English Patient","Miramax, Tiger Moth Productions","Saul Zaentz",1996,"t","Walter Murch","t"
+"117","Fargo","PolyGram","Ethan Coen",1996,"f","Roderick Jaynes","f"
+"118","Jerry Maguire","TriStar, Gracie Films","James L. Brooks, Laurence Mark, Richard Sakai, and Cameron Crowe",1996,"f","Joe Hutshing","f"
+"119","Secrets & Lies","October, Thin Man Films","Simon Channing-Williams",1996,"f",NA,NA
+"120","Shine","FineLine Features, Momentum Films","Jane Scott",1996,"f","Pip Karmel","f"
+"121","Braveheart","Paramount, 20th Century Fox, Icon","Mel Gibson, Alan Ladd, Jr., and Bruce Davey",1995,"t","Steven Rosenblum","f"
+"122","Apollo 13","Universal, Imagine Entertainment","Brian Grazer",1995,"f","Mike Hill and Daniel P. Hanley","t"
+"123","Babe","Universal, Kennedy Miller Productions","Bill Miller, George Miller, and Doug Mitchell",1995,"f","Marcus D'Arcy and Jay Friedkin","f"
+"124","Il Postino: The Postman[K]","Miramax, Cecchi Gori Group Tiger Cinematografica, Esterno Mediterraneo Film, Blue Dahlia, Penta Film","Mario Cecchi Gori, Vittorio Cecchi Gori, and Gaetano Daniele",1995,"f",NA,NA
+"125","Sense and Sensibility","Columbia, Mirage","Lindsay Doran",1995,"f",NA,NA
+"126","Forrest Gump","Paramount","Wendy Finerman, Steve Tisch, and Steve Starkey",1994,"t","Arthur Schmidt","t"
+"127","Four Weddings and a Funeral","PolyGram, Working Title","Duncan Kenworthy",1994,"f",NA,NA
+"128","Pulp Fiction","Miramax","Lawrence Bender",1994,"f","Sally Menke","f"
+"129","Quiz Show","Hollywood","Michael Jacobs, Julian Krainin, Michael Nozik, and Robert Redford",1994,"f",NA,NA
+"130","The Shawshank Redemption","Columbia, Castle Rock Entertainment","Niki Marvin",1994,"f","Richard Francis-Bruce","f"
+"131","Schindler's List","Universal, Amblin Entertainment","Steven Spielberg, Gerald R. Molen, and Branko Lustig",1993,"t","Michael Kahn","t"
+"132","The Fugitive","Warner Bros.","Arnold Kopelson",1993,"f","Dennis Virkler, David Finfer, Dean Goodhill, Don Brochu, Richard Nord, and Dov Hoenig","f"
+"133","In the Name of the Father","Universal, Hell's Kitchen","Jim Sheridan",1993,"f","Gerry Hambling","f"
+"134","The Piano","Miramax, Jan Chapman Productions","Jan Chapman",1993,"f","Veronika Jenet","f"
+"135","The Remains of the Day","Columbia, Merchant Ivory","Mike Nichols, John Calley, and Ismail Merchant",1993,"f",NA,NA
+"136","Unforgiven","Warner Bros., Malpaso","Clint Eastwood",1992,"t","Joel Cox","t"
+"137","The Crying Game","Miramax, Palace Pictures","Stephen Woolley",1992,"f","Kant Pan","f"
+"138","A Few Good Men","Columbia, Castle Rock Entertainment","David Brown, Rob Reiner, and Andrew Scheinman",1992,"f","Robert Leighton","f"
+"139","Howards End","Sony Pictures Classics, Merchant Ivory","Ismail Merchant",1992,"f",NA,NA
+"140","Scent of a Woman","Universal","Martin Brest",1992,"f",NA,NA
+"141","The Silence of the Lambs","Orion","Edward Saxon, Kenneth Utt, and Ron Bozman",1991,"t","Craig McKay","f"
+"142","Beauty and the Beast","Disney","Don Hahn",1991,"f",NA,NA
+"143","Bugsy","TriStar, Mulholland Productions, Baltimore Pictures","Mark Johnson, Barry Levinson, and Warren Beatty",1991,"f",NA,NA
+"144","JFK","Warner Bros., Regency Enterprises","A. Kitman Ho and Oliver Stone",1991,"f","Joe Hutshing and Pietro Scalia","t"
+"145","The Prince of Tides","Columbia","Barbra Streisand and Andrew S. Karsch",1991,"f",NA,NA
+"146","Dances with Wolves","Orion, TIG Productions","Jim Wilson and Kevin Costner",1990,"t","Neil Travis","t"
+"147","Awakenings","Columbia","Walter F. Parkes and Lawrence Lasker",1990,"f",NA,NA
+"148","Ghost","Paramount","Lisa Weinstein",1990,"f","Walter Murch","f"
+"149","The Godfather Part III","Paramount, American Zoetrope","Francis Ford Coppola",1990,"f","Barry Malkin, Lisa Fruchtman, and Walter Murch","f"
+"150","Goodfellas","Warner Bros.","Irwin Winkler",1990,"f","Thelma Schoonmaker","f"
+"151","Driving Miss Daisy","Warner Bros.","Richard D. Zanuck, Lili Fini Zanuck",1989,"t","Mark Warner","f"
+"152","Born on the Fourth of July","Universal","A. Kitman Ho, Oliver Stone",1989,"f","David Brenner, Joe Hutshing","t"
+"153","Dead Poets Society","Touchstone","Steven Haft, Paul Junger Witt, Tony Thomas",1989,"f",NA,NA
+"154","Field of Dreams","Universal","Lawrence Gordon, Charles Gordon",1989,"f",NA,NA
+"155","My Left Foot","Miramax, Ferndale Films, Granada Television International","Noel Pearson",1989,"f",NA,NA
+"156","Rain Man","United Artists","Mark Johnson",1988,"t","Stu Linder","f"
+"157","The Accidental Tourist","Warner Bros.","Lawrence Kasdan, Charles Okun, Michael Grillo",1988,"f",NA,NA
+"158","Dangerous Liaisons","Warner Bros., Lorimar, N.F.H. Productions","Norma Heyman, Hank Moonjean",1988,"f",NA,NA
+"159","Mississippi Burning","Orion","Frederick Zollo, Robert F. Colesberry",1988,"f","Gerry Hambling","f"
+"160","Working Girl","20th Century Fox","Douglas Wick",1988,"f",NA,NA
+"161","The Last Emperor[O]","Columbia, Recorded Picture Company, Yanco Films, TAO Films, AAA, Soprofilms","Jeremy Thomas",1987,"t",NA,NA
+"162","Broadcast News","20th Century Fox","James L. Brooks",1987,"f","Richard Marks","f"
+"163","Fatal Attraction","Paramount","Stanley R. Jaffe, Sherry Lansing",1987,"f","Michael Kahn, Peter E. Berger","f"
+"164","Hope and Glory","Columbia, Goldcrest Films, Nelson Entertainment","John Boorman",1987,"f",NA,NA
+"165","Moonstruck","Metro-Goldwyn-Mayer","Patrick J. Palmer, Norman Jewison",1987,"f",NA,NA
+"166","Platoon","Orion, Hemdale","Arnold Kopelson",1986,"t","Claire Simpson","t"
+"167","Children of a Lesser God","Paramount","Burt Sugarman, Patrick J. Palmer",1986,"f",NA,NA
+"168","Hannah and Her Sisters","Orion","Robert Greenhut",1986,"f","Susan E. Morse","f"
+"169","The Mission","Warner Bros., Enigma Film Productions, Goldcrest Films, Kingsmere","Fernando Ghia, David Puttnam",1986,"f","Jim Clark","f"
+"170","A Room with a View","Merchant Ivory","Ismail Merchant",1986,"f",NA,NA
+"171","Out of Africa","Universal, Mirage Enterprises","Sydney Pollack",1985,"t","Fredric Steinkamp, William Steinkamp, Pembroke Herring, Sheldon Kahn","f"
+"172","The Color Purple","Warner Bros., Amblin Entertainment","Steven Spielberg, Kathleen Kennedy, Frank Marshall, Quincy Jones",1985,"f",NA,NA
+"173","Kiss of the Spider Woman","Island Alive, FilmDallas Pictures, HB Filmes","David Weisman",1985,"f",NA,NA
+"174","Prizzi's Honor","20th Century Fox, ABC Motion Pictures","John Foreman",1985,"f","Rudi Fehr, Kaja Fehr","f"
+"175","Witness","Paramount","Edward S. Feldman",1985,"f","Thom Noble","t"
+"176","Amadeus","Orion","Saul Zaentz",1984,"t","Nena Danevic, Michael Chandler","f"
+"177","The Killing Fields","Warner Bros., Enigma Film Productions","David Puttnam",1984,"f","Jim Clark","t"
+"178","A Passage to India","Columbia, G.W. Films, Thorn EMI","John Brabourne, Richard Goodwin",1984,"f","David Lean","f"
+"179","Places in the Heart","Tri-Star","Arlene Donovan",1984,"f",NA,NA
+"180","A Soldier's Story","Columbia","Norman Jewison, Ronald L. Schwary, Patrick Palmer",1984,"f",NA,NA
+"181","Terms of Endearment","Paramount","James L. Brooks",1983,"t","Richard Marks","f"
+"182","The Big Chill","Columbia","Michael Shamberg",1983,"f",NA,NA
+"183","The Dresser","Columbia, Goldcrest, World Film Services","Peter Yates",1983,"f",NA,NA
+"184","The Right Stuff","Warner Bros., The Ladd Company","Irwin Winkler, Robert Chartoff",1983,"f","Glenn Farr, Lisa Fruchtman, Stephen A. Rotter, Douglas Stewart, Tom Rolf","t"
+"185","Tender Mercies","Universal, EMI","Philip S. Hobel",1983,"f",NA,NA
+"186","Gandhi","Columbia","Richard Attenborough",1982,"t","John Bloom","t"
+"187","E.T. the Extra-Terrestrial","Universal, Amblin Entertainment","Steven Spielberg, Kathleen Kennedy[M]",1982,"f","Carol Littleton","f"
+"188","Missing","Universal","Edward Lewis, Mildred Lewis",1982,"f",NA,NA
+"189","Tootsie","Columbia","Sydney Pollack, Dick Richards",1982,"f","Fredric Steinkamp, William Steinkamp","f"
+"190","The Verdict","20th Century Fox","Richard D. Zanuck, David Brown",1982,"f",NA,NA
+"191","Chariots of Fire","Warner Bros., Enigma Film Productions","David Puttnam",1981,"t","Terry Rawlings","f"
+"192","Atlantic City","Paramount, Cine-Neighbor, Selta Films","Denis Héroux",1981,"f",NA,NA
+"193","On Golden Pond","ITC, Universal","Bruce Gilbert",1981,"f","Robert L. Wolfe (posthumous nomination)","f"
+"194","Raiders of the Lost Ark","Lucasfilm, Paramount","Frank Marshall",1981,"f","Michael Kahn","t"
+"195","Reds","Paramount","Warren Beatty",1981,"f","Dede Allen, Craig McKay","f"
+"196","Ordinary People","Paramount","Ronald L. Schwary",1980,"t",NA,NA
+"197","Coal Miner's Daughter","Universal","Bernard Schwartz",1980,"f","Arthur Schmidt","f"
+"198","The Elephant Man","Paramount, Brooksfilms","Jonathan Sanger",1980,"f","Anne V. Coates","f"
+"199","Raging Bull","United Artists","Irwin Winkler, Robert Chartoff",1980,"f","Thelma Schoonmaker","t"
+"200","Tess","Renn Productions, Timothy Burrill Productions","Claude Berri, Timothy Burrill",1980,"f",NA,NA
+"201","Kramer vs. Kramer","Columbia","Stanley R. Jaffe",1979,"t","Gerald B. Greenberg","f"
+"202","All That Jazz","20th Century Fox, Columbia","Robert Alan Aurthur",1979,"f","Alan Heim","t"
+"203","Apocalypse Now","United Artists, Zoetrope","Francis Ford Coppola, Fred Roos, Gray Frederickson, Tom Sternberg",1979,"f","Richard Marks, Walter Murch, Gerald B. Greenberg, Lisa Fruchtman","f"
+"204","Breaking Away","20th Century Fox","Peter Yates",1979,"f",NA,NA
+"205","Norma Rae","20th Century Fox","Tamara Asseyev, Alex Rose",1979,"f",NA,NA
+"206","The Deer Hunter","Universal, EMI","Barry Spikings, Michael Deeley, Michael Cimino, John Peverall",1978,"t","Peter Zinner","t"
+"207","Coming Home","United Artists","Jerome Hellman",1978,"f","Don Zimmerman","f"
+"208","Heaven Can Wait","Paramount","Warren Beatty",1978,"f",NA,NA
+"209","Midnight Express","Columbia","Alan Marshall, David Puttnam",1978,"f","Gerry Hambling","f"
+"210","An Unmarried Woman","20th Century Fox, Casablanca Filmworks","Paul Mazursky, Tony Ray",1978,"f",NA,NA
+"211","Annie Hall","United Artists","Charles H. Joffe",1977,"t",NA,NA
+"212","The Goodbye Girl","Metro-Goldwyn-Mayer, Warner Bros.","Ray Stark",1977,"f",NA,NA
+"213","Julia","20th Century Fox","(Richard Roth)",1977,"f","Walter Murch","f"
+"214","Star Wars","Lucasfilm, 20th Century Fox","Gary Kurtz",1977,"f","Paul Hirsch, Marcia Lucas, Richard Chew","t"
+"215","The Turning Point","20th Century Fox","Herbert Ross, Arthur Laurents",1977,"f","William H. Reynolds","f"
+"216","Rocky","United Artists","Irwin Winkler, Robert Chartoff",1976,"t","Richard Halsey, Scott Conrad","t"
+"217","All the President's Men","Warner Bros.","Walter Coblenz",1976,"f","Robert L. Wolfe","f"
+"218","Bound for Glory","United Artists","Robert F. Blumofe, Harold Leventhal",1976,"f","Robert C. Jones, Pembroke J. Herring","f"
+"219","Network","Metro-Goldwyn-Mayer, United Artists","Howard Gottfried",1976,"f","Alan Heim","f"
+"220","Taxi Driver","Columbia","Michael Phillips, Julia Phillips",1976,"f",NA,NA
+"221","One Flew Over the Cuckoo's Nest","United Artists","Saul Zaentz[N], Michael Douglas",1975,"t","Richard Chew, Lynzee Klingman, Sheldon Kahn","f"
+"222","Barry Lyndon","Warner Bros., Peregrine Productions, Hawk Films","Stanley Kubrick",1975,"f",NA,NA
+"223","Dog Day Afternoon","Warner Bros.","Martin Bregman, Martin Elfand",1975,"f","Dede Allen","f"
+"224","Jaws","Universal","Richard D. Zanuck and David Brown",1975,"f","Verna Fields","t"
+"225","Nashville","Paramount","Robert Altman",1975,"f",NA,NA
+"226","The Godfather Part II [O]","Paramount","Francis Ford Coppola, Gray Frederickson, Fred Roos",1974,"t",NA,NA
+"227","Chinatown","Paramount","Robert Evans",1974,"f","Sam O'Steen","f"
+"228","The Conversation","Paramount, Coppola Co.","Francis Ford Coppola",1974,"f",NA,NA
+"229","Lenny","United Artists","Marvin Worth",1974,"f",NA,NA
+"230","The Towering Inferno","20th Century Fox, Warner Bros.","Irwin Allen",1974,"f","Harold F. Kress, Carl Kress","t"
+"231","The Sting","Universal","Tony Bill, Michael Phillips, Julia Phillips",1973,"t","William H. Reynolds","t"
+"232","American Graffiti","Lucasfilm, Universal, Coppola Co.","Francis Ford Coppola, Gary Kurtz",1973,"f","Verna Fields, Marcia Lucas","f"
+"233","Cries and Whispers[K]","Cinematograph, Svenska Filminstitutet","Ingmar Bergman",1973,"f",NA,NA
+"234","The Exorcist","Warner Bros.","William Peter Blatty",1973,"f","Jordan Leondopoulos, Bud Smith, Evan Lottman, Norman Gay","f"
+"235","A Touch of Class","Avco Embassy, Gordon Film Productions","Melvin Frank",1973,"f",NA,NA
+"236","The Godfather","Paramount","Albert S. Ruddy",1972,"t","William H. Reynolds, Peter Zinner","f"
+"237","Cabaret","Allied Artists, ABC Pictures","Cy Feuer",1972,"f","David Bretherton","t"
+"238","Deliverance","Warner Bros.","John Boorman",1972,"f","Tom Priestley","f"
+"239","The Emigrants[K]","Warner Bros., Svensk Filmindustri","Bengt Forslund",1972,"f",NA,NA
+"240","Sounder","20th Century Fox","Robert B. Radnitz",1972,"f",NA,NA
+"241","The French Connection","20th Century Fox","Philip D'Antoni",1971,"t","Gerald B. Greenberg","t"
+"242","A Clockwork Orange","Warner Bros.","Stanley Kubrick",1971,"f","Bill Butler","f"
+"243","Fiddler on the Roof","United Artists","Norman Jewison",1971,"f",NA,NA
+"244","The Last Picture Show","Columbia","Stephen J. Friedman",1971,"f",NA,NA
+"245","Nicholas and Alexandra","Columbia","Sam Spiegel",1971,"f",NA,NA
+"246","Patton","20th Century Fox","Frank McCarthy",1970,"t","Hugh S. Fowler","t"
+"247","Airport","Universal","Ross Hunter",1970,"f","Stuart Gilmore","f"
+"248","Five Easy Pieces","Columbia","Bob Rafelson, Richard Wechsler",1970,"f",NA,NA
+"249","Love Story","Paramount","Howard G. Minsky",1970,"f",NA,NA
+"250","MASH","20th Century Fox","Ingo Preminger",1970,"f","Danford B. Greene","f"
+"251","Midnight Cowboy","United Artists","Jerome Hellman",1969,"t","Hugh A. Robertson","f"
+"252","Anne of the Thousand Days","Universal","Hal B. Wallis",1969,"f",NA,NA
+"253","Butch Cassidy and the Sundance Kid","20th Century Fox","John Foreman",1969,"f",NA,NA
+"254","Hello, Dolly!","20th Century Fox","Ernest Lehman",1969,"f","William H. Reynolds","f"
+"255","Z[K]","O.N.C.I.C., Cinema V","Jacques Perrin, Ahmed Rachedi",1969,"f",NA,NA
+"256","Oliver!","Columbia, Romulus Films, Warwick Film Productions","John Woolf",1968,"t","Ralph Kemplen","f"
+"257","Funny Girl","Columbia","Ray Stark",1968,"f","Robert Swink, Maury Winetrobe, William Sands","f"
+"258","The Lion in Winter","Embassy, Haworth Productions","Martin Poll",1968,"f",NA,NA
+"259","Rachel, Rachel","Warner Bros.","Paul Newman",1968,"f",NA,NA
+"260","Romeo and Juliet","Paramount, B.H.E. Productions, Verona Produzione, Dino De Laurentiis","Anthony Havelock-Allan, John Brabourne",1968,"f",NA,NA
+"261","In the Heat of the Night","United Artists","Walter Mirisch",1967,"t","Hal Ashby","t"
+"262","Bonnie and Clyde","Warner Bros., Seven Arts","Warren Beatty",1967,"f",NA,NA
+"263","Doctor Dolittle","20th Century Fox","Arthur P. Jacobs",1967,"f","Samuel E. Beetley, Marjorie Fowler","f"
+"264","The Graduate","Embassy","Lawrence Turman",1967,"f",NA,NA
+"265","Guess Who's Coming to Dinner","Columbia","Stanley Kramer",1967,"f","Robert C. Jones","f"
+"266","A Man for All Seasons","Columbia, Highland Films","Fred Zinnemann",1966,"t",NA,NA
+"267","Alfie","Paramount","Lewis Gilbert",1966,"f",NA,NA
+"268","The Russians Are Coming, the Russians Are Coming","United Artists, Sheldrake Films","Norman Jewison",1966,"f",NA,NA
+"269","The Sand Pebbles","20th Century Fox","Robert Wise",1966,"f","William H. Reynolds","f"
+"270","Who's Afraid of Virginia Woolf?","Warner Bros.","Ernest Lehman",1966,"f","Sam O'Steen","f"
+"271","The Sound of Music","20th Century Fox","Robert Wise",1965,"t","William H. Reynolds","t"
+"272","Darling","Embassy","Joseph Janni",1965,"f",NA,NA
+"273","Doctor Zhivago","Metro-Goldwyn-Mayer, Vic Films, Appia Films","Carlo Ponti",1965,"f","Norman Savage","f"
+"274","Ship of Fools","Columbia","Stanley Kramer",1965,"f",NA,NA
+"275","A Thousand Clowns","United Artists","Fred Coe",1965,"f",NA,NA
+"276","My Fair Lady","Warner Bros.","Jack L. Warner",1964,"t","William H. Ziegler","f"
+"277","Becket","Paramount","Hal B. Wallis",1964,"f","Anne V. Coates","f"
+"278","Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb","Columbia","Stanley Kubrick",1964,"f",NA,NA
+"279","Mary Poppins","Disney","Walt Disney, Bill Walsh",1964,"f","Cotton Warburton","t"
+"280","Zorba the Greek","20th Century Fox","Michael Cacoyannis",1964,"f",NA,NA
+"281","Tom Jones","United Artists, Woodfall Films","Tony Richardson",1963,"t",NA,NA
+"282","America, America","Warner Bros.","Elia Kazan",1963,"f",NA,NA
+"283","Cleopatra","20th Century Fox","Walter Wanger",1963,"f","Dorothy Spencer","f"
+"284","How the West Was Won","Metro-Goldwyn-Mayer, Cinerama","Bernard Smith",1963,"f","Harold F. Kress","t"
+"285","Lilies of the Field","United Artists","Ralph Nelson",1963,"f",NA,NA
+"286","Lawrence of Arabia","Columbia","Sam Spiegel",1962,"t","Anne V. Coates","t"
+"287","The Longest Day","20th Century Fox","Darryl F. Zanuck",1962,"f","Samuel E. Beetley","f"
+"288","The Music Man","Warner Bros.","Morton DaCosta",1962,"f","William H. Ziegler","f"
+"289","Mutiny on the Bounty","Metro-Goldwyn-Mayer","Aaron Rosenberg",1962,"f","John McSweeney, Jr.","f"
+"290","To Kill a Mockingbird","Universal-International","Alan J. Pakula",1962,"f",NA,NA
+"291","West Side Story","United Artists","Robert Wise",1961,"t","Thomas Stanford","t"
+"292","Fanny","Warner Bros.","Joshua Logan",1961,"f","William H. Reynolds","f"
+"293","The Guns of Navarone","Columbia","Carl Foreman",1961,"f","Alan Osbiston","f"
+"294","The Hustler","20th Century Fox","Robert Rossen",1961,"f",NA,NA
+"295","Judgment at Nuremberg","United Artists","Stanley Kramer",1961,"f","Frederic Knudtson","f"
+"296","The Apartment","United Artists, The Mirisch Company","Billy Wilder",1960,"t","Daniel Mandell","t"
+"297","The Alamo","United Artists, Batjac Productions","John Wayne",1960,"f","Stuart Gilmore","f"
+"298","Elmer Gantry","United Artists","Bernard Smith",1960,"f",NA,NA
+"299","Sons and Lovers","20th Century Fox","Jerry Wald",1960,"f",NA,NA
+"300","The Sundowners","Warner Bros.","Fred Zinnemann",1960,"f",NA,NA
+"301","Ben-Hur","Metro-Goldwyn-Mayer","Sam Zimbalist",1959,"t","Ralph E. Winters, John D. Dunning","t"
+"302","Anatomy of a Murder","Columbia","Otto Preminger",1959,"f","Louis R. Loeffler","f"
+"303","The Diary of Anne Frank","20th Century Fox","George Stevens",1959,"f",NA,NA
+"304","The Nun's Story","Warner Bros.","Henry Blanke",1959,"f","Walter Thompson","f"
+"305","Room at the Top","Remus Films","John and James Woolf",1959,"f",NA,NA
+"306","Gigi","Metro-Goldwyn-Mayer","Arthur Freed",1958,"t","Adrienne Fazan","t"
+"307","Auntie Mame","Warner Bros.","Jack L. Warner",1958,"f","William H. Ziegler","f"
+"308","Cat on a Hot Tin Roof","Metro-Goldwyn-Mayer","Lawrence Weingarten",1958,"f",NA,NA
+"309","The Defiant Ones","Kramer, United Artists","Stanley Kramer",1958,"f","Frederic Knudtson","f"
+"310","Separate Tables","United Artists","Harold Hecht",1958,"f",NA,NA
+"311","The Bridge on the River Kwai","Columbia, Horizon Pictures","Sam Spiegel",1957,"t","Peter Taylor","t"
+"312","12 Angry Men","United Artists","Henry Fonda, Reginald Rose",1957,"f",NA,NA
+"313","Peyton Place","20th Century Fox","Jerry Wald",1957,"f",NA,NA
+"314","Sayonara","Warner Bros.","William Goetz",1957,"f","Arthur P. Schmidt, Philip W. Anderson","f"
+"315","Witness for the Prosecution","United Artists","Arthur Hornblow, Jr.",1957,"f","Daniel Mandell","f"
+"316","Around the World in 80 Days","United Artists, Michael Todd Productions","Michael Todd",1956,"t","Gene Ruggiero, Paul Weatherwax","t"
+"317","Friendly Persuasion","Allied Artists","William Wyler",1956,"f",NA,NA
+"318","Giant","Warner Bros.","George Stevens, Henry Ginsberg",1956,"f","William Hornbeck, Philip W. Anderson, Fred Bohanan","f"
+"319","The King and I","20th Century Fox","Charles Brackett",1956,"f",NA,NA
+"320","The Ten Commandments","Paramount","Cecil B. DeMille",1956,"f","Anne Bauchens","f"
+"321","Marty","United Artists, Steven Productions, Hecht-Lancaster Productions","Harold Hecht",1955,"t",NA,NA
+"322","Love Is a Many-Splendored Thing","20th Century Fox","Buddy Adler",1955,"f",NA,NA
+"323","Mister Roberts","Warner Bros.","Leland Hayward",1955,"f",NA,NA
+"324","Picnic","Columbia","Fred Kohlmar",1955,"f","Charles Nelson, William A. Lyon","t"
+"325","The Rose Tattoo","Paramount","Hal B. Wallis",1955,"f","Warren Low","f"
+"326","On the Waterfront","Columbia","Sam Spiegel [N]",1954,"t","Gene Milford","t"
+"327","The Caine Mutiny","Columbia","Stanley Kramer",1954,"f","William A. Lyon, Henry Batista","f"
+"328","The Country Girl","Paramount","William Perlberg",1954,"f",NA,NA
+"329","Seven Brides for Seven Brothers","Metro-Goldwyn-Mayer","Jack Cummings",1954,"f","Ralph E. Winters","f"
+"330","Three Coins in the Fountain","20th Century Fox","Sol C. Siegel",1954,"f",NA,NA
+"331","From Here to Eternity","Columbia","Buddy Adler",1953,"t","William A. Lyon","t"
+"332","Julius Caesar","Metro-Goldwyn-Mayer","John Houseman",1953,"f",NA,NA
+"333","The Robe","20th Century Fox","Frank Ross",1953,"f",NA,NA
+"334","Roman Holiday","Paramount","William Wyler",1953,"f","Robert Swink","f"
+"335","Shane","Paramount","George Stevens",1953,"f",NA,NA
+"336","The Greatest Show on Earth","Paramount","Cecil B. DeMille",1952,"t","Anne Bauchens","f"
+"337","High Noon","United Artists","Stanley Kramer",1952,"f","Elmo Williams, Harry Gerstad","t"
+"338","Ivanhoe","Metro-Goldwyn-Mayer","Pandro S. Berman",1952,"f",NA,NA
+"339","Moulin Rouge","United Artists, Romulus Films","John Huston, John and James Woolf",1952,"f","Ralph Kemplen","f"
+"340","The Quiet Man","Republic","John Ford, Merian C. Cooper",1952,"f",NA,NA
+"341","An American in Paris","Metro-Goldwyn-Mayer","Arthur Freed",1951,"t","Adrienne Fazan","f"
+"342","Decision Before Dawn","20th Century Fox","Anatole Litvak, Frank McCarthy",1951,"f","Dorothy Spencer","f"
+"343","A Place in the Sun","Paramount","George Stevens",1951,"f","William Hornbeck","t"
+"344","Quo Vadis","Metro-Goldwyn-Mayer","Sam Zimbalist",1951,"f","Ralph E. Winters","f"
+"345","A Streetcar Named Desire","Warner Bros.","Charles K. Feldman",1951,"f",NA,NA
+"346","All About Eve","20th Century Fox","Darryl F. Zanuck",1950,"t","Barbara McLean","f"
+"347","Born Yesterday","Columbia","S. Sylvan Simon",1950,"f",NA,NA
+"348","Father of the Bride","Metro-Goldwyn-Mayer","Pandro S. Berman",1950,"f",NA,NA
+"349","King Solomon's Mines","Metro-Goldwyn-Mayer","Sam Zimbalist",1950,"f","Ralph E. Winters, Conrad A. Nervig","t"
+"350","Sunset Boulevard","Paramount","Charles Brackett",1950,"f","Arthur P. Schmidt, Doane Harrison","f"
+"351","All the King's Men","Rossen, Columbia","Robert Rossen",1949,"t","Robert Parrish, Al Clark","f"
+"352","Battleground","Metro-Goldwyn-Mayer","Dore Schary",1949,"f","John Dunning","f"
+"353","The Heiress","Paramount","William Wyler",1949,"f",NA,NA
+"354","A Letter to Three Wives","20th Century Fox","Sol C. Siegel",1949,"f",NA,NA
+"355","Twelve O'Clock High","20th Century Fox","Darryl F. Zanuck",1949,"f",NA,NA
+"356","Hamlet","Two Cities Films","Laurence Olivier",1948,"t",NA,NA
+"357","Johnny Belinda","Warner Bros.","Jerry Wald",1948,"f","David Weisbart","f"
+"358","The Red Shoes","Independent Producers, The Archers","Michael Powell, Emeric Pressburger",1948,"f","Reginald Mills","f"
+"359","The Snake Pit","20th Century Fox","Anatole Litvak, Robert Bassler",1948,"f",NA,NA
+"360","The Treasure of the Sierra Madre","Warner Bros.","Henry Blanke",1948,"f",NA,NA
+"361","Gentleman's Agreement","20th Century Fox","Darryl F. Zanuck",1947,"t","Harmon Jones","f"
+"362","The Bishop's Wife","RKO Radio","Samuel Goldwyn",1947,"f","Monica Collingwood","f"
+"363","Crossfire","RKO Radio","Adrian Scott",1947,"f",NA,NA
+"364","Great Expectations","Cineguild","Ronald Neame",1947,"f",NA,NA
+"365","Miracle on 34th Street","20th Century Fox","William Perlberg",1947,"f",NA,NA
+"366","The Best Years of Our Lives","RKO Radio","Samuel Goldwyn",1946,"t","Daniel Mandell","t"
+"367","Henry V","Two Cities Films","Laurence Olivier",1946,"f",NA,NA
+"368","It's a Wonderful Life","RKO Radio","Frank Capra",1946,"f","William Hornbeck","f"
+"369","The Razor's Edge","20th Century Fox","Darryl F. Zanuck",1946,"f",NA,NA
+"370","The Yearling","Metro-Goldwyn-Mayer","Sidney Franklin",1946,"f","Harold F. Kress","f"
+"371","The Lost Weekend","Paramount","Charles Brackett",1945,"t","Doane Harrison","f"
+"372","Anchors Aweigh","Metro-Goldwyn-Mayer","Joe Pasternak",1945,"f",NA,NA
+"373","The Bells of St. Mary's","RKO Radio","Leo McCarey",1945,"f","Harry Marker","f"
+"374","Mildred Pierce","Warner Bros.","Jerry Wald",1945,"f",NA,NA
+"375","Spellbound","Selznick International, United Artists","David O. Selznick",1945,"f",NA,NA
+"376","Going My Way","Paramount","Leo McCarey",1944,"t","LeRoy Stone","f"
+"377","Double Indemnity","Paramount","Joseph Sistrom",1944,"f",NA,NA
+"378","Gaslight","Metro-Goldwyn-Mayer","Arthur Hornblow, Jr.",1944,"f",NA,NA
+"379","Since You Went Away","Selznick International, United Artists","David O. Selznick",1944,"f","Hal C. Kern, James E. Newcom","f"
+"380","Wilson","20th Century Fox","Darryl F. Zanuck",1944,"f","Barbara McLean","t"
+"381","Casablanca","Warner Bros.","Hal B. Wallis",1943,"t","Owen Marks","f"
+"382","For Whom the Bell Tolls","Paramount","Sam Wood",1943,"f","Sherman Todd, John F. Link Sr.","f"
+"383","Heaven Can Wait","20th Century Fox","Ernst Lubitsch",1943,"f",NA,NA
+"384","The Human Comedy","Metro-Goldwyn-Mayer","Clarence Brown",1943,"f",NA,NA
+"385","In Which We Serve","Two Cities Films","Noël Coward",1943,"f",NA,NA
+"386","Madame Curie","Metro-Goldwyn-Mayer","Sidney Franklin",1943,"f",NA,NA
+"387","The More the Merrier","Columbia","George Stevens",1943,"f",NA,NA
+"388","The Ox-Bow Incident","20th Century Fox","Lamar Trotti",1943,"f",NA,NA
+"389","The Song of Bernadette","20th Century Fox","William Perlberg",1943,"f","Barbara McLean","f"
+"390","Watch on the Rhine","Warner Bros.","Hal B. Wallis",1943,"f",NA,NA
+"391","Mrs. Miniver","Metro-Goldwyn-Mayer","Sidney Franklin",1942,"t","Harold F. Kress","f"
+"392","The Invaders","GFD, Columbia","Michael Powell",1942,"f",NA,NA
+"393","Kings Row","Warner Bros.","Hal B. Wallis",1942,"f",NA,NA
+"394","The Magnificent Ambersons","Mercury, RKO Radio","Orson Welles",1942,"f",NA,NA
+"395","The Pied Piper","20th Century Fox","Nunnally Johnson",1942,"f",NA,NA
+"396","The Pride of the Yankees","Goldwyn, RKO Radio","Samuel Goldwyn",1942,"f","Daniel Mandell","t"
+"397","Random Harvest","Metro-Goldwyn-Mayer","Sidney Franklin",1942,"f",NA,NA
+"398","The Talk of the Town","Columbia","George Stevens",1942,"f","Otto Meyer","f"
+"399","Wake Island","Paramount","Joseph Sistrom",1942,"f",NA,NA
+"400","Yankee Doodle Dandy","Warner Bros.","Jack L. Warner, Hal B. Wallis, William Cagney",1942,"f","George Amy","f"
+"401","How Green Was My Valley","20th Century Fox","Darryl F. Zanuck",1941,"t","James B. Clark","f"
+"402","Blossoms in the Dust","Metro-Goldwyn-Mayer","Irving Asher",1941,"f",NA,NA
+"403","Citizen Kane","RKO Radio","Orson Welles",1941,"f","Robert Wise","f"
+"404","Here Comes Mr. Jordan","Columbia","Everett Riskin",1941,"f",NA,NA
+"405","Hold Back the Dawn","Paramount","Arthur Hornblow, Jr.",1941,"f",NA,NA
+"406","The Little Foxes","RKO Radio","Samuel Goldwyn",1941,"f","Daniel Mandell","f"
+"407","The Maltese Falcon","Warner Bros.","Hal B. Wallis",1941,"f",NA,NA
+"408","One Foot in Heaven","Warner Bros.","Hal B. Wallis",1941,"f",NA,NA
+"409","Sergeant York","Warner Bros.","Hal B. Wallis, Jesse L. Lasky",1941,"f","William Holmes","t"
+"410","Suspicion","RKO Radio","Alfred Hitchcock",1941,"f",NA,NA
+"411","Rebecca","Selznick International, United Artists","David O. Selznick",1940,"t","Hal C. Kern","f"
+"412","All This, and Heaven Too","Warner Bros.","Jack L. Warner, Hal B. Wallis, David Lewis",1940,"f",NA,NA
+"413","Foreign Correspondent","Wanger, United Artists","Walter Wanger",1940,"f",NA,NA
+"414","The Grapes of Wrath","20th Century Fox","Darryl F. Zanuck, Nunnally Johnson",1940,"f","Robert L. Simpson","f"
+"415","The Great Dictator","Chaplin, United Artists","Charlie Chaplin",1940,"f",NA,NA
+"416","Kitty Foyle","RKO Radio","David Hempstead",1940,"f",NA,NA
+"417","The Letter","Warner Bros.","Hal B. Wallis",1940,"f","Warren Low","f"
+"418","The Long Voyage Home","Argosy, Wanger, United Artists","John Ford",1940,"f","Sherman Todd","f"
+"419","Our Town","Lesser, United Artists","Sol Lesser",1940,"f",NA,NA
+"420","The Philadelphia Story","Metro-Goldwyn-Mayer","Joseph L. Mankiewicz",1940,"f",NA,NA
+"421","Gone with the Wind","Selznick International, Metro-Goldwyn-Mayer","David O. Selznick",1939,"t","Hal C. Kern, James E. Newcom","t"
+"422","Dark Victory","Warner Bros.","David Lewis",1939,"f",NA,NA
+"423","Goodbye, Mr. Chips","Metro-Goldwyn-Mayer","Victor Saville",1939,"f","Charles Frend","f"
+"424","Love Affair","RKO Radio","Leo McCarey",1939,"f",NA,NA
+"425","Mr. Smith Goes to Washington","Columbia","Frank Capra",1939,"f","Gene Havlick, Al Clark","f"
+"426","Ninotchka","Metro-Goldwyn-Mayer","Sidney Franklin",1939,"f",NA,NA
+"427","Of Mice and Men","Roach, United Artists","Lewis Milestone",1939,"f",NA,NA
+"428","Stagecoach","United Artists","Walter Wanger",1939,"f","Otho Lovering, Dorothy Spencer","f"
+"429","The Wizard of Oz","Metro-Goldwyn-Mayer","Mervyn LeRoy",1939,"f",NA,NA
+"430","Wuthering Heights","Goldwyn, United Artists","Samuel Goldwyn",1939,"f",NA,NA
+"431","You Can't Take It With You","Columbia","Frank Capra",1938,"t",NA,NA
+"432","The Adventures of Robin Hood","Warner Bros.","Hal B. Wallis, Henry Blanke",1938,"f","Ralph Dawson","t"
+"433","Alexander's Ragtime Band","20th Century Fox","Darryl F. Zanuck, Harry Joe Brown",1938,"f","Barbara McLean","f"
+"434","Boys Town","Metro-Goldwyn-Mayer","John W. Considine, Jr.",1938,"f",NA,NA
+"435","The Citadel","Metro-Goldwyn-Mayer","Victor Saville",1938,"f",NA,NA
+"436","Four Daughters","Warner Bros., First National","Hal B. Wallis, Henry Blanke",1938,"f",NA,NA
+"437","Grand Illusion [K]","R. A. O., World Pictures","Frank Rollmer, Albert Pinkovitch",1938,"f",NA,NA
+"438","Jezebel","Warner Bros.","Hal B. Wallis, Henry Blanke",1938,"f",NA,NA
+"439","Pygmalion","Metro-Goldwyn-Mayer","Gabriel Pascal",1938,"f",NA,NA
+"440","Test Pilot","Metro-Goldwyn-Mayer","Louis Lighton",1938,"f","Tom Held","f"
+"441","The Life of Emile Zola","Warner Bros.","Henry Blanke",1937,"t",NA,NA
+"442","The Awful Truth","Columbia","Leo McCarey, Everett Riskin",1937,"f","Al Clark","f"
+"443","Captains Courageous","Metro-Goldwyn-Mayer","Louis Lighton",1937,"f","Elmo Veron","f"
+"444","Dead End","Goldwyn, United Artists","Samuel Goldwyn, Merritt Hulbert",1937,"f",NA,NA
+"445","The Good Earth","Metro-Goldwyn-Mayer","Irving Thalberg, Albert Lewin",1937,"f","Basil Wrangell","f"
+"446","In Old Chicago","20th Century Fox","Darryl F. Zanuck, Kenneth MacGowan",1937,"f",NA,NA
+"447","Lost Horizon","Columbia","Frank Capra",1937,"f","Gene Havlick, Gene Milford","t"
+"448","One Hundred Men and a Girl","Universal","Charles R. Rogers, Joe Pasternak",1937,"f","Bernard W. Burton","f"
+"449","Stage Door","RKO Radio","Pandro S. Berman",1937,"f",NA,NA
+"450","A Star Is Born","Selznick International, United Artists","David O. Selznick",1937,"f",NA,NA
+"451","The Great Ziegfeld","Metro-Goldwyn-Mayer","Hunt Stromberg",1936,"t","William S. Gray","f"
+"452","Anthony Adverse","Warner Bros.","Henry Blanke",1936,"f","Ralph Dawson","t"
+"453","Dodsworth","Goldwyn, United Artists","Samuel Goldwyn, Merritt Hulbert",1936,"f",NA,NA
+"454","Libeled Lady","Metro-Goldwyn-Mayer","Lawrence Weingarten",1936,"f",NA,NA
+"455","Mr. Deeds Goes to Town","Columbia","Frank Capra",1936,"f",NA,NA
+"456","Romeo and Juliet","Metro-Goldwyn-Mayer","Irving Thalberg",1936,"f",NA,NA
+"457","San Francisco","Metro-Goldwyn-Mayer","John Emerson, Bernard H. Hyman",1936,"f",NA,NA
+"458","The Story of Louis Pasteur","Warner Bros.","Henry Blanke",1936,"f",NA,NA
+"459","A Tale of Two Cities","Metro-Goldwyn-Mayer","David O. Selznick",1936,"f","Conrad A. Nervig","f"
+"460","Three Smart Girls","Universal","Joe Pasternak, Charles R. Rogers",1936,"f",NA,NA
+"461","Mutiny on the Bounty [J]","Metro-Goldwyn-Mayer","Irving Thalberg, Albert Lewin",1935,"t",NA,NA
+"462","Alice Adams","RKO Radio","Pandro S. Berman",1935,"f",NA,NA
+"463","Broadway Melody of 1936","Metro-Goldwyn-Mayer","John W. Considine, Jr.",1935,"f",NA,NA
+"464","Captain Blood[J]","Warner Bros., Cosmopolitan","Hal B. Wallis, Harry Joe Brown, Gordon Hollingshead",1935,"f",NA,NA
+"465","David Copperfield","Metro-Goldwyn-Mayer","David O. Selznick",1935,"f","Robert J. Kern","f"
+"466","The Informer[J]","RKO Radio","Cliff Reid",1935,"f",NA,NA
+"467","The Lives of a Bengal Lancer","Paramount","Louis D. Lighton",1935,"f",NA,NA
+"468","A Midsummer Night's Dream","Warner Bros.","Henry Blanke",1935,"f","Ralph Dawson","t"
+"469","Les Misérables","20th Century, United Artists","Darryl F. Zanuck",1935,"f","Barbara McLean","f"
+"470","Naughty Marietta","Metro-Goldwyn-Mayer","Hunt Stromberg",1935,"f",NA,NA
+"471","Ruggles of Red Gap","Paramount","Arthur Hornblow, Jr.",1935,"f",NA,NA
+"472","Top Hat","RKO Radio","Pandro S. Berman",1935,"f",NA,NA
+"473","It Happened One Night [I]","Columbia","Harry Cohn & Frank Capra",1934,"t",NA,NA
+"474","The Barretts of Wimpole Street[I]","Metro-Goldwyn-Mayer","Irving Thalberg",1934,"f",NA,NA
+"475","Cleopatra","Paramount","Cecil B. DeMille",1934,"f","Anne Bauchens","f"
+"476","Flirtation Walk","First National","Jack L. Warner, Hal B. Wallis, Robert Lord",1934,"f",NA,NA
+"477","The Gay Divorcee","RKO Radio","Pandro S. Berman",1934,"f",NA,NA
+"478","Here Comes the Navy","Warner Bros.","Lou Edelman",1934,"f",NA,NA
+"479","The House of Rothschild[I]","20th Century, United Artists","Darryl F. Zanuck, William Goetz, Raymond Griffith",1934,"f",NA,NA
+"480","Imitation of Life","Universal","John M. Stahl",1934,"f",NA,NA
+"481","One Night of Love","Columbia","Harry Cohn, Everett Riskin",1934,"f","Gene Milford","f"
+"482","The Thin Man","Metro-Goldwyn-Mayer","Hunt Stromberg",1934,"f",NA,NA
+"483","Viva Villa!","Metro-Goldwyn-Mayer","David O. Selznick",1934,"f",NA,NA
+"484","The White Parade","Fox","Jesse L. Lasky",1934,"f",NA,NA
