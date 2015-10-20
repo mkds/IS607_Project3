@@ -7,7 +7,7 @@ edit_txt <- readLines("All_Academy_awards.1934-2014.txt")
 
 #instantiate a DF with raw text and identify the year lines
 edit_frame <- data.frame(edit_txt, 
-                         str_detect(edit_txt, "[0-9]{4} \\([0-9]*th\\)"),
+                         str_detect(edit_txt, "^[0-9]{4} \\([0-9]{1,2}..\\)"),
                          str_detect(edit_txt, "(^[A-Z]{3})|\\([A-Z a-z]+\\)$"),
                          stringsAsFactors = FALSE)
 
@@ -70,4 +70,4 @@ for (i in 1:length(best_edit$Nominee)) {
 best_edit$`Additional Info` <- str_replace_all(best_edit$`Additional Info`,",",";")
 best_edit$Nominee <- str_replace_all(best_edit$Nominee,",",";")
 best_edit$Category <- str_replace_all(best_edit$Category,",",";")
-write.csv(best_edit, "Data_All_2011-14.csv", row.names=FALSE, quote=FALSE)
+write.csv(best_edit, "Data_All.csv", row.names=FALSE, quote=FALSE)
