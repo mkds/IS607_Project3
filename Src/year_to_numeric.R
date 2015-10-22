@@ -10,6 +10,6 @@ df$Year = sapply(df$Year,function(i){
     i = str_replace(i,"\\(.*\\)",replacement = "")
 })
 
-df1$Year = as.numeric(df1$Year)
+df$Year = as.numeric(df$Year)
 
 write.csv(df, "project_view_year_numeric.csv", row.names=FALSE, quote=FALSE)
