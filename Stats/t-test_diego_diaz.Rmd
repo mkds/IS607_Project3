@@ -1,0 +1,301 @@
+---
+title: "Project_3_t-test"
+author: "Diego Diaz"
+date: "October 22, 2015"
+output: 
+  html_document: 
+    highlight: tango
+    theme: readable
+    toc: yes
+---
+
+#Objective
+
+#Required Libraries
+```{r libraries}
+
+library(tidyr)
+library(dplyr)
+
+```
+
+#Loading the Data
+
+```{r loading_data}
+
+mydata <- read.csv("C:/Users/Diego Diaz/Documents/project3.csv", stringsAsFactors = FALSE)
+
+head(mydata)
+str(mydata)
+
+
+```
+
+#Data Transformation
+
+```{r transformation}
+
+mydata2 <- mutate(mydata, TEST = ifelse(Won == "yes", 1, 0))
+
+head(mydata2)
+
+```
+
+
+
+#Subsetting
+
+```{r subsetting}
+
+#Rest
+rt <- filter(mydata2, Category != "FILM EDITING" & Category != "BEST PICTURE")
+
+#Film Editing
+ed <- filter(mydata2, Category == "FILM EDITING")
+
+#Best Picture
+bp <- filter(mydata2, Category == "BEST PICTURE")
+
+#Cinematography
+cm <- filter(mydata2, Category == "CINEMATOGRAPHY")
+
+#Directing
+dr <- filter(mydata2, Category == "DIRECTING")
+
+
+#Special Effects
+sp <- filter(mydata2, Category == "SPECIAL EFFECTS")
+
+
+#Sound Editing
+sm <- filter(mydata2, Category == "SOUND MIXING")
+
+
+#Actor in leading role
+ar <- filter(mydata2, Category == "ACTOR IN A LEADING ROLE")
+
+
+```
+
+#Left Joins
+
+> Rest vs. Best Picture
+
+```{r joins_rest_bp}
+
+#Left join for Rest vs. Best Picture
+lj1 <- left_join(rt,bp, by = "Nominee")
+
+#Selecting the TEST column
+lj1 <- unlist(select(lj1,TEST.y))
+
+#Converting NAs to zeros
+lj1[is.na(lj1)] <- 0 
+
+
+```
+
+
+
+> Film Editing vs. Best Picture
+
+```{r joins_editing_bp}
+#Left join for Film Editing vs. Best Picture
+lj2 <- left_join(ed,bp, by = "Nominee")
+
+
+#Selecting the TEST column
+lj2 <- unlist(select(lj2,TEST.y))
+
+
+#Converting NAs to zeros
+lj2[is.na(lj2)] <- 0
+
+
+```
+
+> Cinematography vs. Best Picture 
+
+```{r joins_editing_cinematography}
+#Left join for Cinematography vs. Best Picture
+lj3 <- left_join(cm,bp, by = "Nominee")
+
+#Selecting the TEST column
+lj3 <- unlist(select(lj3,TEST.y))
+
+#Converting NAs to zeros
+lj3[is.na(lj3)] <- 0 
+
+```
+
+> Directing vs. Best Picture
+
+```{r joins_editing_directing}
+#Left join for Directing vs. Best Picture
+lj4 <- left_join(dr,bp, by = "Nominee")
+
+#Selecting the TEST column
+lj4 <- unlist(select(lj4,TEST.y))
+
+#Converting NAs to zeros
+lj4[is.na(lj4)] <- 0 
+
+```
+
+
+> Special Effects vs. Best Picture
+
+```{r joins_editing_effects}
+#Left join for Special Effects vs. Best Picture
+lj5 <- left_join(sp,bp, by = "Nominee")
+
+#Selecting the TEST column
+lj5 <- unlist(select(lj5,TEST.y))
+
+#Converting NAs to zeros
+lj5[is.na(lj5)] <- 0 
+
+lj5 <- unlist(lj5)
+
+```
+
+> Sound Mixing vs. Best Picture
+
+```{r joins_editing_sound}
+#Left join for Sound Sound Mixing vs. Best Picture
+lj6 <- left_join(sm,bp, by = "Nominee")
+
+#Selecting the TEST column
+lj6 <- unlist(select(lj6,TEST.y))
+
+#Converting NAs to zeros
+lj6[is.na(lj6)] <- 0
+
+```
+
+> Actor in Leading Role vs. Best Picture
+
+```{r joins_editing_actor}
+#Left join for Actor in Laeding Role vs. Best Picture
+lj7 <- left_join(ar,bp, by = "Nominee")
+
+#Selecting the TEST column
+lj7 <- unlist(select(lj7,TEST.y))
+
+#Converting NAs to zeros
+lj7[is.na(lj7)] <- 0 
+
+```
+
+
+
+#F and T-Test Analysis
+
+
+> Film Editing  vs. Rest
+
+**F-Test**
+
+```{r bp_rest_f}
+
+var.test(lj2,lj1)
+
+
+```
+
+**T-Test**
+```{r bp_rest_t}
+
+t.test(lj2,lj1, var.equal=FALSE, paired=FALSE)
+
+```
+
+
+> Film Editing vs. Cinematography 
+
+**F-Test**
+
+```{r bp_cinematography_f}
+
+var.test(lj2,lj3)
+
+
+```
+
+**T-Test**
+```{r bp_cinematography_t}
+
+t.test(lj2,lj3, var.equal=TRUE, paired=FALSE)
+
+```
+
+
+> Film Editing vs. Directing
+
+
+**F-Test**
+
+```{r bp_directing_f}
+
+var.test(lj2,lj4)
+
+
+```
+
+**T-Test**
+```{r bp_directing_t}
+
+t.test(lj2,lj4, var.equal=TRUE, paired=FALSE)
+
+```
+
+> Fild Editing vs. Special Effects
+
+```{r bp_effects_f}
+
+#var.test(lj2,lj5)
+
+
+```
+
+**T-Test**
+```{r bp_effects_t}
+
+#t.test(lj2,lj5, var.equal=FALSE, paired=FALSE)
+
+```
+> Film Editing vs. Sound Mixing
+
+```{r bp_mixing_f}
+
+var.test(lj2,lj6)
+
+  
+```
+
+**T-Test**
+```{r bp_mixing_t}
+
+t.test(lj2,lj6, var.equal=TRUE, paired=FALSE)
+
+```
+
+> Film Editing vs. Actor in Leading Role
+
+
+```{r bp_actor_f}
+
+var.test(lj2,lj7)
+
+
+```
+
+**T-Test**
+```{r bp_actor_t}
+
+t.test(lj2,lj7, var.equal=FALSE, paired=FALSE)
+
+```
+
+#Conclusion
+
