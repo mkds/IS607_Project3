@@ -16,6 +16,8 @@ output:
 
 library(tidyr)
 library(dplyr)
+library(RCurl)
+
 
 ```
 
@@ -23,7 +25,10 @@ library(dplyr)
 
 ```{r loading_data}
 
-mydata <- read.csv("C:/Users/Diego Diaz/Documents/project3.csv", stringsAsFactors = FALSE)
+url <- getURL("https://raw.githubusercontent.com/mkds/IS607_Project3/gh-pages/Data/project_view_year_numeric_CLEANED.csv")
+
+mydata <- read.csv(text = url) 
+
 
 head(mydata)
 str(mydata)
@@ -78,6 +83,7 @@ ar <- filter(mydata2, Category == "ACTOR IN A LEADING ROLE")
 ```
 
 #Left Joins
+
 
 > Rest vs. Best Picture
 
