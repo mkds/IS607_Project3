@@ -24,7 +24,7 @@ thebrowser$open()
 thebrowser$navigate("http://awardsdatabase.oscars.org/ampas_awards/BasicSearch")
 
 #Define our search criteria
-#We are interested in the records from 1934
+#We are interested in the records from 1927
 box1 <- thebrowser$findElement(using = 'name', "BSFromYear")
 box1$sendKeysToElement(list("1927")) 
 
