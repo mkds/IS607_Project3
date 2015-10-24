@@ -26,7 +26,7 @@ thebrowser$navigate("http://awardsdatabase.oscars.org/ampas_awards/BasicSearch")
 #Define our search criteria
 #We are interested in the records from 1934
 box1 <- thebrowser$findElement(using = 'name', "BSFromYear")
-box1$sendKeysToElement(list("1934")) 
+box1$sendKeysToElement(list("1927")) 
 
 
 #We will like to have the data from the first oscars to the last one
@@ -53,4 +53,5 @@ page_source<-thebrowser$getPageSource() #we get the source of the page in HTML
 rawdata<-read_html(page_source[[1]]) %>% html_nodes("dl") %>%html_text()
 
 str(rawdata)
+write.table(rawdata, file = "rawdata_from_awardsDatabase.txt")
 ```
