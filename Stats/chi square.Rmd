@@ -1,0 +1,68 @@
+---
+title: "Chi square Test"
+author: "Jason Joseph"
+date: "October 23, 2015"
+output: html_document
+---
+```{r Echo=FALSE}
+require(dplyr)
+require(stringr)
+```
+
+```{r}
+#load csv
+file <- read.csv("Project 3//project_view_1981_2014.csv")
+
+# clean up white spaces from columns
+file$Nominee <- gsub("^\\s+|\\s+$", "", file$Nominee)
+file$Category <- gsub("^\\s+|\\s+$", "", file$Category)
+file$Won <- gsub("^\\s+|\\s+$", "", file$Won)
+file$Nominee <- str_replace(file$Nominee,"'","")
+
+
+# Construct output  df with distinct categories and their total
+output <- count(file,Category)
+colnames(output)[2] <- "category_nomination"
+
+# add category won  column
+best_picture_nominee <- subset(file, Category == "BEST PICTURE") %>% select(Nominee,Won)
+for(i in 1: nrow(output))
+{
+  #calculate 
+  output$won_category[i] <-  subset(file, Category == output$Category[i]) %>%  select(Won) %>%  filter(Won != 'no')%>% nrow
+  cat_nominee <- subset(file, Category == output$Category[i]) %>% select(Nominee) 
+  output$bp_nomination[i] <- inner_join(cat_nominee,best_picture_nominee,by="Nominee") %>%  nrow()
+  output$bp_won[i] <- inner_join(cat_nominee,best_picture_nominee,by="Nominee") %>%  select(Won) %>%  filter(Won != 'no')%>% nrow
+  output$bp_lost[i] <- inner_join(cat_nominee,best_picture_nominee,by="Nominee") %>%  select(Won) %>%  filter(Won == 'no')%>% nrow
+}
+output
+```
+#Observed Frequencies
+```{r}
+observed_freq <- output %>% select(Category,bp_won,category_nomination)
+observed_freq$Total <- observed_freq$bp_won + observed_freq$category_nomination
+observed_freq$percentage <- observed_freq$bp_won/observed_freq$Total
+#colnames(observed_freq) <- c("Row variable (Nominated)","Won Best Picture","Nominated for Row Variable","Total","% Best Picture wins")
+observed_freq
+```
+
+#Expected Frequencies
+
+```{r}
+exp_freq <- observed_freq %>% select(Category)
+sum_won_best_picture <- sum(observed_freq$bp_won)
+sum_category_nomination <- sum(observed_freq$category_nomination)
+sum_total <- sum(observed_freq$Total)
+for(i in 1:nrow(exp_freq))
+{
+  val <- observed_freq %>% subset(Category == exp_freq$Category[i])
+  exp_freq$bp_won[i] <- val$Total * (sum_won_best_picture / sum_total)
+  exp_freq$category_nomination[i] <- val$Total * (sum_category_nomination / sum_total)
+}
+exp_freq$Total <-  exp_freq$bp_won +  exp_freq$category_nomination
+exp_freq
+```
+
+
+
+
