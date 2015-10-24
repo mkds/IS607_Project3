@@ -149,6 +149,7 @@ textarea {
  */
 body {
   margin: 0;
+
 }
 
 /* =============================================================================
@@ -534,7 +535,9 @@ body {
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f0e7d5;
   font-weight: normal;
-  background: #252525;
+  /*background: #252525; */
+      background-image:url("../images/cuny-msda.jpg");
+
   background-attachment: fixed !important;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
   background: -webkit-linear-gradient(#2a2a29, #1c1c1c);
@@ -698,7 +701,7 @@ dt {
   z-index: 100;
   left: 0;
   top: 0px;
-  height: 60px;
+  height: 80px;
   width: 100%;
   position: fixed;
   background: url(../images/nav-bg.gif) #353535;
@@ -785,6 +788,8 @@ section {
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
   margin-top: 70px;
+      background-size: contain;	
+
 }
 section #title {
   border: 0;
