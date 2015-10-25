@@ -34,7 +34,7 @@
           <li class="title">DOWNLOADS</li>
         </nav>                        
         <div id="test" class="wrapper">
-          <h2 align="center">IS607 Project 3</h2>
+          <h1 align="center">IS607 Project 3</h1>
           <p align="center">The envelope, please</p>
           <hr>
           </div>
@@ -47,11 +47,17 @@
 
         <h3>
 <a id="project-description" class="anchor" href="#project-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Description</h3>
-<p>Project Description</p>
+
+<p> Goal of Project 3 is to determine whether the Best Film Editing category is the best predictor of winning the Best Picture award in the Academy Awards.</p>
 
 <h3>
 <a id="approach" class="anchor" href="#approach" aria-hidden="true"><span class="octicon octicon-link"></span></a>Approach</h3>
 <p>Project approach overall strategy</p>
+
+<p>Our overall strategry to tackle this project was to break it down into smaller tasks and farm out those tasks among the entire team.</p>
+<p>This project required a high-degree of collaboration and the we used the slack.com website to facilicate this collaboration.</p>
+
+
 <br>
 <br>
 <br>
@@ -60,6 +66,13 @@
 <a id="data-sources-considered" class="anchor" href="#data-sources-considered" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Sources considered</h3>
 
 <p>3 data sources</p>
+
+<ul style="list-style-type:disc">
+  <li>Wikipedia page</li>
+  <li>AwardsDatabase</li>
+  <li>CSV file with data up to 2010</li>
+</ul>
+
 <br>
 <br>
 <br>
@@ -67,12 +80,32 @@
 <h3>
 <a id="obtaining-data" class="anchor" href="#obtaining-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Obtaining Data</h3>
 
-<p>How we obtained the data from source
-Getting data from web
-Text file </p>
-<br>
-<br>
-<br>
+<p>How we obtained the data from source</p>
+<p>Getting data from web</p>
+
+<p> <b> Scraping data from the Awards Database by Edwige Talla Badjio </b> </p>
+
+<p onclick=more_less('scrap') align="center">Show more/Less - Get Data From Web</p>
+<div id="scrap" style="display:none">
+<iframe src="http://rpubs.com/fangseup88/120360"  width="100%" height="800px" frameborder="0"> </iframe>
+<p onclick="getElementById('scrap').style.display = 'none'" align="center">Show Less</p>
+</div>
+
+
+
+<p> <b>Data Gathering/Cleaning and Database Work by Jason Deblase and Chris Fenton </b> </p>
+
+<ul style="list-style-type:disc">
+  <li>Parse Text File</li>
+  <li>Code Refactoring</li>
+  </ul>
+
+<p onclick=more_less('parse') align="center">Show more/Less - Praser</p>
+<div id="parse" style="display:none">
+<iframe src="http://rpubs.com/bsnacks000/120396"  width="100%" height="400px" frameborder="0"> </iframe>
+<p onclick="getElementById('parse').style.display = 'none'" align="center">Show Less</p>
+</div>
+
 <h4>
 <a id="cleaning-up" class="anchor" href="#cleaning-up" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cleaning up</h4>
 
@@ -92,6 +125,19 @@ Normalization</p>
 <a id="data" class="anchor" href="#data" aria-hidden="true"><span class="octicon octicon-link"></span></a>DATA</h3>
 
 <p>Describe the data. Provide summary statistics.</p>
+
+
+<p> <b>Summary Analysis in Tableau by Christina Taylor </b></p>
+
+<p> Using Tableau to see how many other awards were won by Best Picture winners.</p>
+
+<p onclick=more_less('explore1') align="center">Show more/Less - Tableau 1</p>
+<div id="explore1" style="display:none">
+<iframe src="https://public.tableau.com/profile/christina8792#!/vizhome/nominee/Dashboard1"  width="100%" height="800px" frameborder="0"> </iframe>
+<p onclick="getElementById('explore1').style.display = 'none'" align="center">Show Less</p>
+</div>
+
+
 <br>
 <br>
 <br>
@@ -101,10 +147,18 @@ Normalization</p>
 <p>Tables, graphs.. 
 Check the distribution and conditions to do a t-test or chi square test</p>
 <br>
-<p onclick=more_less('explore1') align="center">Show more/Less (click me)</p>
+
+<p> <b> Exploratory Data Analysis by Puneet Auluck </b> </p>
+<p> Analysis questions:</p>
+<ul style="list-style-type:disc">
+  <li>Is Film Editing the best predictor of Best Picture?</li>
+  <li>Is there a correlation between winning Categories and Best Picture Nominees that did not win?</li>
+</ul>
+
+<p onclick=more_less('explore1') align="center">Show more/Less - Explore 1</p>
 <div id="explore1" style="display:none">
-<iframe src="http://rpubs.com/puneetauluck/118442"  width="100%" height="400px"> </iframe>
-<p onclick="getElementById('bing1').style.display = 'none'" align="center">Show Less</p>
+<iframe src="http://rpubs.com/puneetauluck/118442"  width="100%" height="400px" frameborder="0"> </iframe>
+<p onclick="getElementById('explore1').style.display = 'none'" align="center">Show Less</p>
 </div>
 
 <h3>
@@ -113,6 +167,18 @@ Check the distribution and conditions to do a t-test or chi square test</p>
 <p>Chi Square test, t-test
 Graphs for t-test showing p-value
 Interpretation of test results</p>
+
+<p> <b> Interpretation of two sample t-test results by Diego Diaz </b> </p>
+
+
+<p> The two sample T-Test statistic was used to determine if a Film Editing nomination was a good predictor for winning the Best Picture award. Based on the analysis, we can conlude that Film Editing is a better predictor of winning the Best Picture award when compared to the rest of the categories put together. Comparing the Film Editing sample to the to individual categories, such as Directing, Sound Mixing, etc., did not yield the same results.</p> 
+
+
+<p onclick=more_less('t-test') align="center">Show more/Less - t-test</p>
+<div id="t-test" style="display:none">
+<iframe src="http://rpubs.com/diegomdiaz/120111"  width="100%" height="600px" frameborder="0"> </iframe>
+<p onclick="getElementById('t-test').style.display = 'none'" align="center">Show Less</p>
+</div>
 <br>
 <br>
 <br>
@@ -122,7 +188,25 @@ Interpretation of test results</p>
 <br>
 <br>
 <h3>
-<a id="team" class="anchor" href="#team" aria-hidden="true"><span class="octicon octicon-link"></span></a>Team</h3>
+<a id="team" class="anchor" href="#team" aria-hidden="true"><span class="octicon octicon-link"></span></a>Team Participants</h3>
+
+
+<ul style="list-style-type:disc">
+  <li>Angus Huang</li>
+  <li>Diego Diaz</li>
+  <li>Edwige Talla Badjio</li>
+  <li>Brian Kreis</li>
+  <li>Chris Fenton</li>
+  <li>Christina Taylor</li>
+  <li>Jason Joseph</li>
+  <li>John Deblase</li>
+  <li><b>Mohan Kandaraj*</b></li>
+  <li>Nicholas Capofari</li>
+  <li>Puneet Auluck</li>
+</ul>
+
+<p><i>*Project Leader</i></p>
+
 <br>
 <br>
 <br>
