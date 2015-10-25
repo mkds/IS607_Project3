@@ -372,24 +372,33 @@ t.test(lj2,lj7, var.equal=TRUE, paired=FALSE)
 
 ```
 
-#Conclusion
+# Recap of Results & Conclusion
 
-> Film Editing vs. Rest 
+> Recapping the Resulst of the t-test 
 
-p-value = 0.02384 is less than 0.05 so I can **reject** the Ho hypothesis. The averages of the two groups are not significantly similar. 
+**Film Editing vs. Rest**     
 
-> Film Editing vs. Cinematography  
+p-value = 0.02384 is less than 0.05 so I can **reject** the Ho hypothesis. The averages of the two groups are not significantly similar. This means that these two samples have different probabilities for winning the Best Picture awards. 
 
-p-value = 0.1571 is greater than 0.05, so I can **accept** the Ho hypothesis. The averages of the two groups are significantly similar. 
+**Film Editing vs. Cinematography**     
 
-> Film Editing vs. Directing  
+p-value = 0.1571 is greater than 0.05, so I can **accept** the Ho hypothesis. The averages of the two groups are significantly similar. This means that these two samples have similar probabilities for winning the Best Picture awards. 
 
-T-test p-value = 0.5453 is greater than 0.05, so I can **accept** the Ho hypothesis. The averages of the two groups are significantly similar. 
+**Film Editing vs. Directing**    
 
-> Film Editing vs. Sound Mixing
+T-test p-value = 0.5453 is greater than 0.05, so I can **accept** the Ho hypothesis. The averages of the two groups are significantly similar. This means that these two samples have similar probabilities for winning the Best Picture awards.  
 
-T-test p-value = 0.5092 is greater than 0.05, so I can **accept** the Ho hypothesis. The averages of the two groups are significantly similar. 
+**Film Editing vs. Sound Mixing**    
 
-> Film Editing vs. Actor in Leading Role
+T-test p-value = 0.5092 is greater than 0.05, so I can **accept** the Ho hypothesis. The averages of the two groups are significantly similar. This means that these two samples have similar probabilities for winning the Best Picture awards.
 
-T-test p-value = 0.2417 is greater than 0.05, so I can **accept** the Ho hypothesis. The averages of the two groups are significantly similar. 
+**Film Editing vs. Actor in Leading Role**  
+
+T-test p-value = 0.2417 is greater than 0.05, so I can **accept** the Ho hypothesis. The averages of the two groups are significantly similar. This means that these two samples have similar probabilities for winning the Best Picture awards.
+
+> Conclusion
+
+Based on the results of the above analysis, we can infer that the **Film Editing** sample is a better predictor of winning the Best Picture award when compared to the rest of the categories put together. 
+
+Comparing the **Film Editing** sample to the  to individual categorie, such as Directing, Sound Mixing, etc., did not yield the same results. 
+
