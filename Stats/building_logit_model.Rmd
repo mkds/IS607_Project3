@@ -1,0 +1,144 @@
+---
+title: "Logit model for Project3"
+author: "Edwige"
+date: "October 25, 2015"
+output: html_document
+---
+
+```{r}
+library(tidyr)
+library(dplyr)
+library(RCurl)
+library(aod)
+library(reshape2)
+
+all_df<- read.csv('project_view_year_numeric_CLEANED.csv', stringsAsFactors=FALSE)
+
+#We will use a subset of the dataset with categories "FILM EDITING", "CINEMATOGRAPHY", "DIRECTING" and "BEST PICTURE".
+part_df2<- subset(all_df, Category %in% c("FILM EDITING", "BEST PICTURE", "CINEMATOGRAPHY", "DIRECTING"))
+
+#Using dcast function from the reshape2 library to transform the variables "Won" and categories "CINEMATOGRAPHY", "DIRECTING", "BEST PICTURE" and "FILM EDITING" into variables "BEST PICTURE_no", "BEST PICTURE_yes", "FILM EDITING_no" and "FILM EDITING_yes", DIRECTING_YES, DIRECTING_NO, CINEMATOGRAPHY_YES, CINEMATOGRAPHY_NO
+
+dichot2<-dcast(part_df2, Year+Nominee ~ Category+Won)
+head(dichot2)
+dtframe<- dichot2
+
+#Changing the variable names 
+thecolnames<-c("Year", "Nominee","BestPic_NO", "BestPic_YES", "Cinemato_NO", "Cinemato_YES", "Directing_NO", "Directing_YES", "FilmEdit_NO", "FilmEdit_YES")
+names(dtframe)<-thecolnames
+
+head(dtframe)
+dtframe<-as.data.frame(dtframe)
+
+# Taking care of Missing Values
+# 1- Creating two columns on nomination status: Nominee_BP and Nominee_FE. If the values of BestPic_NO and BestPic_YES are not available, Nominee_BP is NO, otherwise, Nominee_BP is YES.
+
+#If the values of FilmEdit_NO and FilmEdit_YES are not available, Nominee_FE is NO, otherwise, Nominee_FE is YES.
+
+for (i in 1:nrow(dtframe))
+{ 
+ifelse (((is.na(dtframe[i,"BestPic_NO"])) && (is.na(dtframe[i,"BestPic_YES"]))), dtframe[i,"Nominee_BP"]<-"NO", dtframe[i,"Nominee_BP"]<-"YES")
+  
+ifelse (((is.na(dtframe[i,"Cinemato_NO"])) && (is.na(dtframe[i,"Cinemato_YES"]))), dtframe[i,"Nominee_CI"]<-"NO", dtframe[i,"Nominee_CI"]<-"YES")
+
+ifelse (((is.na(dtframe[i,"Directing_NO"])) && (is.na(dtframe[i,"Directing_YES"]))), dtframe[i,"Nominee_DI"]<-"NO", dtframe[i,"Nominee_DI"]<-"YES")
+
+ifelse (((is.na(dtframe[i,"FilmEdit_NO"])) && (is.na(dtframe[i,"FilmEdit_YES"]))),  dtframe[i,"Nominee_FE"]<-"NO", dtframe[i,"Nominee_FE"]<-"YES")
+}
+
+dtframe2<-dtframe
+# Taking care of Missing Values
+# 2- Transforming missing values to NO
+for (i in 1:nrow(dtframe2))
+{ 
+if (is.na(dtframe2[i,"BestPic_NO"])) dtframe2[i,"BestPic_NO"]<-"NO"
+if (is.na(dtframe2[i,"BestPic_YES"])) dtframe2[i,"BestPic_YES"]<-"NO"
+if (is.na(dtframe2[i,"Cinemato_NO"])) dtframe2[i,"Cinemato_NO"]<-"NO"
+if (is.na(dtframe2[i,"Cinemato_YES"])) dtframe2[i,"Cinemato_YES"]<-"NO"
+if (is.na(dtframe2[i,"Directing_NO"])) dtframe2[i,"Directing_NO"]<-"NO"
+if (is.na(dtframe2[i,"Directing_YES"])) dtframe2[i,"Directing_YES"]<-"NO"
+if (is.na(dtframe2[i,"FilmEdit_NO"])) dtframe2[i,"FilmEdit_NO"]<-"NO"
+if (is.na(dtframe2[i,"FilmEdit_YES"])) dtframe2[i,"FilmEdit_YES"] <-"NO"
+}
+head(dtframe2)
+
+#some fields are in upper case, the other in lower case. We are going to change everything to upper case
+dtframe2$BestPic_NO <- toupper(dtframe2$BestPic_NO)
+dtframe2$BestPic_YES <- toupper(dtframe2$BestPic_YES)
+dtframe2$FilmEdit_NO <- toupper(dtframe2$FilmEdit_NO)
+dtframe2$FilmEdit_YES <- toupper(dtframe2$FilmEdit_YES)
+dtframe2$Cinemato_NO <- toupper(dtframe2$Cinemato_NO)
+dtframe2$Cinemato_YES <- toupper(dtframe2$Cinemato_YES)
+dtframe2$Directing_NO <- toupper(dtframe2$Directing_NO)
+dtframe2$Directing_YES <- toupper(dtframe2$Directing_YES)
+dtframe2$Nominee_BP <- toupper(dtframe2$Nominee_BP)
+dtframe2$Nominee_BP <- toupper(dtframe2$Nominee_BP)
+dtframe2$Nominee_CI <- toupper(dtframe2$Nominee_CI)
+dtframe2$Nominee_DI <- toupper(dtframe2$Nominee_DI)
+
+str(dtframe2)
+
+
+#For our modelisation, we will keep two variables:"BestPic_YES"and "FilmEdit_YES",  from "BestPic_NO", "BestPic_YES", "FilmEdit_NO", "FilmEdit_YES". We will rename those variables to Won_BP (won BEST PICTURE) and Won_FE (won "FILM EDITING")
+
+dtframe2$Won_BP<-dtframe2$BestPic_YES
+dtframe2$Won_CI<-dtframe2$Cinemato_YES
+dtframe2$Won_DI<-dtframe2$Directing_YES
+dtframe2$Won_FE<-dtframe2$FilmEdit_YES
+dtframe2$FilmEdit_YES<-NULL
+dtframe2$BestPic_YES<-NULL
+dtframe2$BestPic_NO<-NULL
+dtframe2$FilmEdit_NO<-NULL
+dtframe2$Cinemato_YES<-NULL
+dtframe2$Directing_YES<-NULL
+dtframe2$Cinemato_NO<-NULL
+dtframe2$Directing_NO<-NULL
+#estimates a logistic regression model using the glm (generalized linear model) function
+#Changing character columns into factors 
+
+dtframe2$Won_FE <- as.factor(dtframe2$Won_FE)
+dtframe2$Won_BP <- as.factor(dtframe2$Won_BP)
+dtframe2$Nominee_BP <- as.factor(dtframe2$Nominee_BP)
+dtframe2$Nominee_FE <- as.factor(dtframe2$Nominee_FE)
+dtframe2$Won_DI <- as.factor(dtframe2$Won_DI)
+dtframe2$Won_CI <- as.factor(dtframe2$Won_CI)
+dtframe2$Nominee_CI <- as.factor(dtframe2$Nominee_CI)
+dtframe2$Nominee_DI <- as.factor(dtframe2$Nominee_DI)
+#Building the model
+#Won_BP and Nominee_BP are correlated, we add Nominee_BP in our model, but we are not expecting any findings from that variable.
+model2<-glm(Won_BP~Won_FE+Nominee_FE+Won_DI+Won_CI+Nominee_CI+Nominee_DI, data=dtframe2,family="binomial")
+
+
+#Using the command summary to get the results
+summary(model2)
+
+```
+
+
+
+In the output from the summary command, the first thing we see is the call, a reminder about what the model we ran was, what options we specified, etc.
+
+Next we see the deviance residuals, which are a measure of model fit. This part of output shows the distribution of the deviance residuals for individual cases used in the model. 
+
+The next part of the output shows the coefficients, their standard errors, the z-statistic (Wald z-statistic), and the associated p-values. 
+
+`Won_DI`, `Nominee_DI`, `Won_FE` and `Nominee_FE` are statistically significant at the:
+
+1- 5% level for `Won_FE`, p-value 0.01720, 
+
+2- 1% level for `Nominee_DI` and `Nominee_FE`, p-values 0.00381 and 0.00370 
+
+3- 0% level for `Won_DI`, p-value < 2e-16. 
+
+The data we have seems to indicate that "FILM EDITING' and "DIRECTING" are influential in predicting "BEST PICTURE". 
+
+
+```{r}
+
+## Confidence Intervals using standard errors
+confint.default(model2)
+
+
+## odds ratios only
+exp(coef(model2))
+```
