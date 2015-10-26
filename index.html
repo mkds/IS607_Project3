@@ -15,14 +15,19 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
 <script type="text/javascript">
    function more_less(id) {
        var e = document.getElementById(id);
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
+          p=e.offsetTop
           e.style.display = 'none';
-       else
+          }
+       else{
           e.style.display = 'block';
-           window.scrollTo(0,e.offsetTop-60);
+          p=e.offsetTop
+          }
+       window.scrollTo(0,p-60);
    }
 </script>
   </head>
@@ -34,7 +39,7 @@
           <li class="downloads"><a href="https://github.com/mkds/IS607_Project3/tarball/master">TAR</a></li>
           <li class="title">DOWNLOADS</li>
         </nav>
-        <div id="test" class="wrapper">
+        <div>
           <h1 align="center">IS607 Project 3</h1>
           <p align="center">The envelope, please</p>
           <hr>
@@ -227,9 +232,9 @@ As p-value is less than 0.05 (0.02623 and 0.008 as shown below), we can conclude
 </div>
 <br>
 <p> <b> Interpretation of Logistic Model Analysis by Edwige Talla Badjio </b> </p>
-<p> A Logistic Model was used to determine if Film Editing is influentual in predicting
-Best Picture. Based on this analysis, the data we have seems to indicate that Film Editing
-is influential in predicting Best Picture win </p>
+<p> A Logistic Model was used to determine if Film Editing, Directing and Cinematography 
+are influentual in predicting Best Picture. 
+The data we have seems to indicate that “FILM EDITING’ and”DIRECTING" are influential in predicting “BEST PICTURE”. </p>
 <br>
 <p onclick=more_less('logistic') align="center">Show more/Less - logistict</p>
 <div id="logistic" style="display:none">
