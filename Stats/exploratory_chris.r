@@ -68,3 +68,14 @@ subset(bp_winner_since_1981, is.na(Won.y))
 #function(nom_vector) {
  # merge(bp_winners_frame, )
 #}
+
+
+#total noms since 1981
+movies_81_on <- subset(movies, Year >= 1981)
+#1660 total nominations
+
+#unique_categories
+unique(movies_81_on$Category)
+#11 unique categories (after cleaning)
+
+#23 of the 
