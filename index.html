@@ -70,11 +70,22 @@
 
 
 
-<p> The team initially tried to use the <b>Wikipedia</b> to collect the necessary data for the project. Wikipedia seemed to provide the data in a good tabular format. lthough a good general reference,
-accessing this type of information from Wikipedia had many challenges. For example, the level of detail we needed spanned multiple pages.
-Additionally, we were not able to verify that all the categories would be included in this data source. Finally, Wikipedia indicated whether a nominee won the award or not by shading the table cell yellow. This meant that extracting text data from the html table would not include the winner.
+<p> Nicholas Capofari tried to use <b>Wikipedia</b> to collect the necessary data for the project. 
+Wikipedia seemed to provide the data in a good tabular format. Although a good general reference,
+accessing this type of information from Wikipedia had many challenges. For example, the level of 
+detail we needed spanned multiple pages.
+Additionally, we were not able to verify that all the categories would be included in this data source. 
+Finally, Wikipedia indicated whether a nominee won the award or not by shading the table cell yellow. 
+This meant that extracting text data from the html table would not include the winner.
 
-Due to these challenges, the team explored other options.</p>
+Due to time constraints, the team explored other options. Nick's code can be accessed below:</p>
+
+<p onclick=more_less('wiki') align="center">Show more/Less - Nick's Wiki Code</p>
+<div id="wiki" style="display:none">
+<iframe src="http://rpubs.com/ncapofari/project_3"  width="100%" height="800px" frameborder="0"> </iframe>
+<p onclick="getElementById('wiki').style.display = 'none'" align="center">Show Less</p>
+</div>
+
 
 <p>A second option was a .csv file found at <a href="https://www.aggdata.com/awards/oscar">this link</a> that provided complete
 nominee and award information through 2010. However, this was insufficient as
@@ -191,27 +202,38 @@ Check the distribution and conditions to do a t-test or chi square test</p>
 <h3>
 <a id="statistical-analysis" class="anchor" href="#statistical-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Statistical Analysis</h3>
 
+<p> In this section, some team members used various statistical techniques to determine whether Best
+Film Editing is the best predictor of Best Picture. </p>
+
 <p> <b>Interpreting the Chi Square test by Angus Huang</b> </p>
 <p>Calculating chi-Square test to see the if there is any significant difference across the category.
 As p-value is less than 0.05 (0.02623 and 0.008 as shown below), we can conclude there is significant difference across the category of best pictures won.</p>
 
 <p onclick=more_less('chisquare') align="center">Show more/Less - chisquare</p>
 <div id="chisquare" style="display:none">
-<iframe src="http://rpubs.com/diegomdiaz/121794"  width="100%" height="800px" frameborder="0"> </iframe>
+<iframe src="http://rpubs.com/ahuang/121826"  width="100%" height="800px" frameborder="0"> </iframe>
 <p onclick="getElementById('chisquare').style.display = 'none'" align="center">Show Less</p>
 </div>
-<br>
 <br>
 <p> <b> Interpretation of two sample t-test results by Diego Diaz </b> </p>
 <p> The two sample T-Test statistic was used to determine if a Film Editing nomination was a good predictor for winning the Best Picture award. Based on the analysis, we can conlude that Film Editing is a better predictor of winning the Best Picture award when compared to the rest of the categories put together. Comparing the Film Editing sample to the to individual categories, such as Directing, Sound Mixing, etc., did not yield the same results.</p>
 <br>
-
 <p onclick=more_less('t-test') align="center">Show more/Less - t-test</p>
 <div id="t-test" style="display:none">
 <iframe src="http://rpubs.com/diegomdiaz/120111"  width="100%" height="800px" frameborder="0"> </iframe>
 <p onclick="getElementById('t-test').style.display = 'none'" align="center">Show Less</p>
 </div>
 <br>
+<p> <b> Interpretation of Logistic Model Analysis by Edwige Talla Badjio </b> </p>
+<p> A Logistic Model was used to determine if Film Editing is influentual in predicting 
+Best Picture. Based on this analysis, the data we have seems to indicate that Film Editing 
+is influential in predicting Best Picture win </p>
+<br>
+<p onclick=more_less('logistic') align="center">Show more/Less - logistict</p>
+<div id="logistic" style="display:none">
+<iframe src="http://rpubs.com/fangseup88/121644"  width="100%" height="800px" frameborder="0"> </iframe>
+<p onclick="getElementById('logistic').style.display = 'none'" align="center">Show Less</p>
+</div>
 <br>
 <br>
 <h3>
@@ -244,6 +266,21 @@ As p-value is less than 0.05 (0.02623 and 0.008 as shown below), we can conclude
 <br>
 <h3>
 <a id="acknowledgement" class="anchor" href="#acknowledgement" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acknowledgement</h3>
+
+<p> This was a challenging project that required the team to collaborate virtually to accomplish a common goal. 
+To all of the team members that contributed to this project, <b>MANY THANK YOUS</b> for your efforts and contributions. 
+Without them, we would not have accomplished our objective.
+
+<p>We would also like to thank our professor, Andy Caitlin, for his clear instruction on the 
+tools and techniques required to accomplish this project. Thank you Andy! </p>
+
+<p>Lastly, the dynamics of this virtual collaboration would not have been possible without using the the slack.com site, Github or Rpubs.
+We greatly appreciate the efforts of those that created those sites/applications. </p>
+
+  
+
+</p>
+
 <br>
 <br>
 <br>
