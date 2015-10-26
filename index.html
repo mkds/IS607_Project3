@@ -54,26 +54,36 @@
 <a id="approach" class="anchor" href="#approach" aria-hidden="true"><span class="octicon octicon-link"></span></a>Approach</h3>
 <p>Project approach overall strategy</p>
 
-<p>Our overall strategry to tackle this project was to break it down into smaller tasks and farm out those tasks among the entire team.</p>
-<p>This project required a high-degree of collaboration and the we used the slack.com website to facilicate this collaboration.</p>
-
-
+<p>Our overall strategy to tackle this project was to break it down into smaller tasks and farm out those tasks among the entire team. This project required a high-degree of collaboration and we used the slack.com website to facilitate dynamic, real-time, collaboration. The Github website was used to store and share code, as well as other project documents.  Both of these resources were used in parallel and proved very effective.</p>
 <br>
 <br>
-<br>
-
 <h3>
 <a id="data-sources-considered" class="anchor" href="#data-sources-considered" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Sources considered</h3>
 
-<p>3 data sources</p>
+<p>Initially, three data sources were considered (see below),but only one was selected.</p>
 
 <ul style="list-style-type:disc">
-  <li>Wikipedia page</li>
+  <li>Wikipedia</li>
   <li>AwardsDatabase</li>
   <li>CSV file with data up to 2010</li>
 </ul>
 
+<p> <b> </b>Chanllenges with the Data Sources</b></p>
+
+<p> The team initially tried to use the <b>Wikipedia</b> to collect the necessary data for the project. Although a good general reference, 
+accessing this type of information from Wikipedia had many challenges. For example, the level of detail we needed spanned multiple pages. 
+Additionally, we were not able to verify that all the categories would be included in this data source. A few attempts to review 
+extract and review the Wikipedia data were done, but they proved technically challenging.  
+Due to these challenges, the team agreed not to use this data source.</p>
+
 <br>
+
+<p> The team initially tried to use the <b>Wikipedia</b> to collect the necessary data for the project. Although a good general reference, 
+accessing this type of information from Wikipedia had many challenges. For example, the level of detail we needed spanned multiple pages. 
+Additionally, we were not able to verify that all the categories would be included in this data source. A few attempts to review 
+extract and review the Wikipedia data were done, but they proved technically challenging.  
+Due to these challenges, the team agreed not to use this data source.</p>
+
 <br>
 <br>
 
@@ -102,7 +112,7 @@
 
 <p onclick=more_less('parse') align="center">Show more/Less - Praser</p>
 <div id="parse" style="display:none">
-<iframe src="http://rpubs.com/bsnacks000/120396"  width="100%" height="400px" frameborder="0"> </iframe>
+<iframe src="http://rpubs.com/bsnacks000/120396"  width="100%" height="800px" frameborder="0"> </iframe>
 <p onclick="getElementById('parse').style.display = 'none'" align="center">Show Less</p>
 </div>
 
@@ -126,18 +136,6 @@ Normalization</p>
 
 <p>Describe the data. Provide summary statistics.</p>
 
-
-<p> <b>Summary Analysis in Tableau by Christina Taylor </b></p>
-
-<p> Using Tableau to see how many other awards were won by Best Picture winners.</p>
-
-<p onclick=more_less('explore1') align="center">Show more/Less - Tableau 1</p>
-<div id="explore1" style="display:none">
-<iframe src="https://public.tableau.com/profile/christina8792#!/vizhome/nominee/Dashboard1"  width="100%" height="800px" frameborder="0"> </iframe>
-<p onclick="getElementById('explore1').style.display = 'none'" align="center">Show Less</p>
-</div>
-
-
 <br>
 <br>
 <br>
@@ -148,6 +146,16 @@ Normalization</p>
 Check the distribution and conditions to do a t-test or chi square test</p>
 <br>
 
+<p> <b>Summary Analysis in Tableau by Christina Taylor </b></p>
+
+<p> Using Tableau to see how many other awards were won by Best Picture winners.</p>
+
+<p onclick=more_less('Tableau') align="center">Show more/Less - Tableau</p>
+<div id="Tableau" style="display:none">
+<iframe src="https://public.tableau.com/profile/christina8792#!/vizhome/nominee/Dashboard1"  width="100%" height="800px" frameborder="0"> </iframe>
+<p onclick="getElementById('Tableau').style.display = 'none'" align="center">Show Less</p>
+</div>
+<br>
 <p> <b> Exploratory Data Analysis by Puneet Auluck </b> </p>
 <p> Analysis questions:</p>
 <ul style="list-style-type:disc">
@@ -157,26 +165,31 @@ Check the distribution and conditions to do a t-test or chi square test</p>
 
 <p onclick=more_less('explore1') align="center">Show more/Less - Explore 1</p>
 <div id="explore1" style="display:none">
-<iframe src="http://rpubs.com/puneetauluck/118442"  width="100%" height="400px" frameborder="0"> </iframe>
+<iframe src="http://rpubs.com/puneetauluck/118442"  width="100%" height="800px" frameborder="0"> </iframe>
 <p onclick="getElementById('explore1').style.display = 'none'" align="center">Show Less</p>
 </div>
 
 <h3>
 <a id="statistical-analysis" class="anchor" href="#statistical-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Statistical Analysis</h3>
 
-<p>Chi Square test, t-test
-Graphs for t-test showing p-value
-Interpretation of test results</p>
+<p> <b>Interpreting the Chi Square test by Angus Huang</b> </p>
+<p>Calculating chi-Square test to see the if there is any significant difference across the category. 
+As p-value is less than 0.05 (0.02623 and 0.008 as shown below), we can conclude there is significant difference across the category of best pictures won.</p>
 
+<p onclick=more_less('chisquare') align="center">Show more/Less - chisquare</p>
+<div id="chisquare" style="display:none">
+<iframe src="http://rpubs.com/diegomdiaz/121794"  width="100%" height="800px" frameborder="0"> </iframe>
+<p onclick="getElementById('chisquare').style.display = 'none'" align="center">Show Less</p>
+</div>
+<br>
+<br>
 <p> <b> Interpretation of two sample t-test results by Diego Diaz </b> </p>
-
-
 <p> The two sample T-Test statistic was used to determine if a Film Editing nomination was a good predictor for winning the Best Picture award. Based on the analysis, we can conlude that Film Editing is a better predictor of winning the Best Picture award when compared to the rest of the categories put together. Comparing the Film Editing sample to the to individual categories, such as Directing, Sound Mixing, etc., did not yield the same results.</p> 
-
+<br>
 
 <p onclick=more_less('t-test') align="center">Show more/Less - t-test</p>
 <div id="t-test" style="display:none">
-<iframe src="http://rpubs.com/diegomdiaz/120111"  width="100%" height="600px" frameborder="0"> </iframe>
+<iframe src="http://rpubs.com/diegomdiaz/120111"  width="100%" height="800px" frameborder="0"> </iframe>
 <p onclick="getElementById('t-test').style.display = 'none'" align="center">Show Less</p>
 </div>
 <br>
