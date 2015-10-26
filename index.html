@@ -52,15 +52,14 @@
 
 <h3>
 <a id="approach" class="anchor" href="#approach" aria-hidden="true"><span class="octicon octicon-link"></span></a>Approach</h3>
-<p>Project approach overall strategy</p>
 
 <p>Our overall strategy to tackle this project was to break it down into smaller tasks and farm out those tasks among the entire team. This project required a high-degree of collaboration, so we used the slack.com website to facilitate dynamic, real-time collaboration. The Github website was used to store and share code, as well as other project documents.  Both of these resources were used in parallel and proved very effective.</p>
-<br>
+
 <br>
 <h3>
-<a id="data-sources-considered" class="anchor" href="#data-sources-considered" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Sources considered</h3>
+<a id="data-sources-considered" class="anchor" href="#data-sources-considered" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Sources Considered</h3>
 
-<p>Initially, three data sources were considered (described below), but only one was selected.</p>
+<p>Initially, these were the three data sources considered:</p>
 
 <ul style="list-style-type:disc">
   <li>Wikipedia</li>
@@ -68,7 +67,7 @@
   <li>CSV file with data up to 2010</li>
 </ul>
 
-<p> <b> </b>Chanllenges with the Data Sources</b></p>
+
 
 
 <p> Nicholas Capofari tried to use <b>Wikipedia</b> to collect the necessary data for the project. 
@@ -88,13 +87,11 @@ Due to time constraints, the team explored other options. Nick's code can be acc
 </div>
 
 
-<br>
-
 <p>A second option was a .csv file found at <a href="https://www.aggdata.com/awards/oscar">this link</a> that provided complete
 nominee and award information through 2010. However, this was insufficient as
 we wanted to the data through 2014, not just 2010. </p>
 
-<br>
+
 
 <p>Finally we settled on the official Awards database at <a href="http://awardsdatabase.oscars.org/ampas_awards/BasicSearchInput.jsp">oscars.org</a>. This data won out in the end because it was complete, official, and the web pages
 had text character indicators of winners (an asterick). </p>
@@ -104,7 +101,7 @@ had text character indicators of winners (an asterick). </p>
 <br>
 
 <h3>
-<a id="obtaining-data" class="anchor" href="#obtaining-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Obtaining Data</h3>
+<a id="obtaining-data" class="anchor" href="#obtaining-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Obtaining the Data</h3>
 
 
 <p>Below, here is code written by Edwige that uses Selenium, a web driver that simplifies sending requests to web servers by letting us simulate
@@ -112,22 +109,34 @@ clicking on things via a web browser. This was a option because the oscars.org w
 
 <p> <b> Scraping data from the Awards Database by Edwige Talla Badjio </b> </p>
 
-<p onclick=more_less('scrap') align="center">Show more/Less - Get Data From Web</p>
+<p onclick=more_less('scrap') align="center">Show more/Less - Scraping Data From Oscars.org</p>
 <div id="scrap" style="display:none">
 <iframe src="http://rpubs.com/fangseup88/120360"  width="100%" height="800px" frameborder="0"> </iframe>
 <p onclick="getElementById('scrap').style.display = 'none'" align="center">Show Less</p>
 </div>
 
+<p>Now that the text data had been programatically obtained from the web, we could begin to write code that parsed those text files in R, build Data Frames, and store the data in a SQL database.</p>
 
+<p>Professor Catlin advised we adopt a strategy that let different groups of people attack different parts of the problem simultaneously.
+To do this, we manually accessed the oscars.org database awards page, ran
+a query in the browser, and copy pasted the text into a text file.
+</p>
 
-<p> <b>Data Gathering/Cleaning and Database Work by Jason Deblase and Chris Fenton </b> </p>
+<p>
+While this wasn't practical for getting ALL the data, it allowed us to start working on writing code to parse the text while the programmatic
+selenium code was written. Chris wrote some raw, procedural code (that broke about every rule of proper code) to
+wrangle just the Best Editing awards and build a dataframe. However this provide valuable to provide a rough framework of the steps that needed
+to be done to get the data from text to R dtta frame to ultimately a .csv file.</p>
 
-<ul style="list-style-type:disc">
-  <li>Parse Text File</li>
-  <li>Code Refactoring</li>
-  </ul>
+<p>
+John took that raw code and made it generalized. His approach was to write anonymous
+fuctions and than apply them to vectors. While there still existed one off situations, John's approach made more use of functional programming techniques that
+kept the code's behavior easier to predict and more reusable.
+</p>
 
-<p onclick=more_less('parse') align="center">Show more/Less - Praser</p>
+<p> <b>Data Gathering/Cleaning and Database Work by John Deblase, Jason Jospeh, and Chris Fenton </b> </p>
+
+<p onclick=more_less('parse') align="center">Show more/Less - Parser</p>
 <div id="parse" style="display:none">
 <iframe src="http://rpubs.com/bsnacks000/120396"  width="100%" height="800px" frameborder="0"> </iframe>
 <p onclick="getElementById('parse').style.display = 'none'" align="center">Show Less</p>
@@ -136,15 +145,19 @@ clicking on things via a web browser. This was a option because the oscars.org w
 <h4>
 <a id="cleaning-up" class="anchor" href="#cleaning-up" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cleaning up</h4>
 
-<p>Discrepancies identified and how they were resolved </p>
+<p>John's script solved many of the formatting problems on the initial run through,
+but when working with the data we would sometimes notice small quirks that needed to be cleaned up. For instance, some of the nominees had a space after the movie title, and some did not. This would make it so "The Godfather" and "The Godfather " would be recognized as separate films, which is an issue when doing analysis. <a href="https://github.com/mkds/IS607_Project3/blob/gh-pages/Data/project_view_numeric_cleanup.r">Here is an example of some quick code to solve this issue.</a>
+</p>
+
 <br>
 <br>
 <br>
 <h4>
 <a id="database" class="anchor" href="#database" aria-hidden="true"><span class="octicon octicon-link"></span></a>Database</h4>
 
-<p>Describe database
-Normalization</p>
+<p>Jason worked in close collaboration by continually iterating and writing SQL scripts that changed with the most current version of the data (it changed several times)
+Once the final data was obtained, Jason wrote the script at <a href="https://raw.githubusercontent.com/mkds/IS607_Project3/gh-pages/Data/Raw/awards.sql">this link</a> to put the data into the database. Jason
+set up a primary key ID field, a category field (the award), a nominee field (the movie nominated), a won field (whether or not the film won the award), and additional info (any other text data included from oscars.org)</p>
 <br>
 <br>
 <br>
