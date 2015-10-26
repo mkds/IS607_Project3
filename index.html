@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
+
 <script type="text/javascript">
    function more_less(id) {
        var e = document.getElementById(id);
@@ -59,17 +59,17 @@
 <h3>
 <a id="approach" class="anchor" href="#approach" aria-hidden="true"><span class="octicon octicon-link"></span></a>Approach</h3>
 
-<p>Our overall strategy to tackle this project was to break it down into smaller tasks and farm out those tasks among the entire team. This project required a high-degree of collaboration, so we used the slack.com website to facilitate dynamic, real-time collaboration. The Github website was used to store and share code, as well as other project documents.  Both of these resources were used in parallel and proved very effective.</p>
+<p>Our overall strategy to tackle this project was to break it down into smaller tasks and farm out those tasks among the entire team. This project required a high-degree of collaboration, so we used slack.com (a messaging app) to facilitate dynamic, real-time collaboration. Github.com (a version control hosting site) was used to store and share code, as well as supplementary project documents.  Both of these resources were used in parallel and proved very effective.</p>
 
 <br>
 <h3>
 <a id="data-sources-considered" class="anchor" href="#data-sources-considered" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Sources Considered</h3>
 
-<p>Initially, these were the three data sources considered:</p>
+<p>Initially, these three data sources considered:</p>
 
 <ul style="list-style-type:disc">
   <li>Wikipedia</li>
-  <li>AwardsDatabase</li>
+  <li>Awards Database from Oscars.org</li>
   <li>CSV file with data up to 2010</li>
 </ul>
 
@@ -77,10 +77,10 @@
 
 
 <p> Nicholas Capofari tried to use <b>Wikipedia</b> to collect the necessary data for the project.
-Wikipedia seemed to provide the data in a good tabular format. Although a good general reference,
-accessing this type of information from Wikipedia had many challenges. For example, the level of
-detail we needed spanned multiple pages.
-Additionally, we were not able to verify that all the categories would be included in this data source.
+Wikipedia seemed to provide the data in a good tabular format. Although Wikipdia turned out to be a good general reference,
+accessing this type of information from Wikipedia presented many challenges. For example, the level of
+detail we needed spanned multiple html web pages.
+Additionally, we were not able to verify that all the categories would be included.
 Finally, Wikipedia indicated whether a nominee won the award or not by shading the table cell yellow.
 This meant that extracting text data from the html table would not include the winner.
 
@@ -110,8 +110,8 @@ had text character indicators of winners (an asterick). </p>
 <a id="obtaining-data" class="anchor" href="#obtaining-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Obtaining the Data</h3>
 
 
-<p>Below, here is code written by Edwige that uses Selenium, a web driver that simplifies sending requests to web servers by letting us simulate
-clicking on things via a web browser. This was a option because the oscars.org website's API wasn't documented or particularly clear.</p>
+<p>Below is code written by Edwige that uses Selenium. Selenium is a web driver that simplifies sending requests to web servers by letting the programmer simulate
+clicking on elements as one would with a web browser. This was an efficient option because the oscars.org website's API wasn't documented or particularly clear.</p>
 
 <p> <b> Scraping data from the Awards Database by Edwige Talla Badjio </b> </p>
 
@@ -121,22 +121,22 @@ clicking on things via a web browser. This was a option because the oscars.org w
 <p onclick="getElementById('scrap').style.display = 'none'" align="center">Show Less</p>
 </div>
 
-<p>Now that the text data had been programatically obtained from the web, we could begin to write code that parsed those text files in R, build Data Frames, and store the data in a SQL database.</p>
+<p>Now that the text data had been programatically obtained from the web, we could begin to write code that parsed the resulting text files in R, build data frames, and store the data in a SQL database.</p>
 
 <p>Professor Catlin advised we adopt a strategy that let different groups of people attack different parts of the problem simultaneously.
-To do this, we manually accessed the oscars.org database awards page, ran
+With this in mind, we manually accessed the oscars.org database awards page, ran
 a query in the browser, and copy pasted the text into a text file.
 </p>
 
 <p>
-While this wasn't practical for getting ALL the data, it allowed us to start working on writing code to parse the text while the programmatic
-selenium code was written. Chris wrote some raw, procedural code (that broke about every rule of proper code) to
-wrangle just the Best Editing awards and build a dataframe. However this provide valuable to provide a rough framework of the steps that needed
-to be done to get the data from text to R dtta frame to ultimately a .csv file.</p>
+While this wasn't practical for getting <i>all</i> the data, it allowed us to start working on the code to parse the text while the programmatic
+selenium code was written. Chris wrote some roughshod procedural code  to
+wrangle just the Best Editing awards and build a dataframe. While not complete, this proved valuable to provide a rough framework of the steps that needed
+to be done to get the data from text, to R data frame, to ultimately a .csv file that could be loaded into the database.</p>
 
 <p>
 John took that raw code and made it generalized. His approach was to write anonymous
-fuctions and than apply them to vectors. While there still existed one off situations, John's approach made more use of functional programming techniques that
+fuctions and apply them to vectors. While there still existed one-off situations, John's approach made more use of functional programming techniques that
 kept the code's behavior easier to predict and more reusable.
 </p>
 
@@ -161,7 +161,7 @@ but when working with the data we would sometimes notice small quirks that neede
 <h4>
 <a id="database" class="anchor" href="#database" aria-hidden="true"><span class="octicon octicon-link"></span></a>Database</h4>
 
-<p>Jason worked in close collaboration by continually iterating and writing SQL scripts that changed with the most current version of the data (it changed several times)
+<p>Jason worked in close collaboration by continually iterating and writing SQL scripts that changed with the most current version of the data (it changed several times).
 Once the final data was obtained, Jason wrote the script at <a href="https://raw.githubusercontent.com/mkds/IS607_Project3/gh-pages/Data/Raw/awards.sql">this link</a> to put the data into the database. Jason
 set up a primary key ID field, a category field (the award), a nominee field (the movie nominated), a won field (whether or not the film won the award), and additional info (any other text data included from oscars.org).
 Therefore, the requirement that the data be stored in a SQL database was met.</p>
@@ -187,8 +187,8 @@ the quote likely came from before 2014.</p>
 <h3>
 <a id="exploratory-analysis" class="anchor" href="#exploratory-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exploratory Analysis</h3>
 
-<p>Tables, graphs..
-Check the distribution and conditions to do a t-test or chi square test</p>
+<p>In this section, the team members do some exploratory analysis on the clean, normalized data before moving on to the perform
+more robuts statistical analysis. </p>
 <br>
 
 <p> <b>Summary Analysis in Tableau by Christina Taylor </b></p>
@@ -201,12 +201,9 @@ Check the distribution and conditions to do a t-test or chi square test</p>
 <p onclick="getElementById('Tableau').style.display = 'none'" align="center">Show Less</p>
 </div>
 <br>
-<p> <b> Exploratory Data Analysis by Puneet Auluck </b> </p>
-<p> Analysis questions:</p>
-<ul style="list-style-type:disc">
-  <li>Is Film Editing the best predictor of Best Picture?</li>
-  <li>Is there a correlation between winning Categories and Best Picture Nominees that did not win?</li>
-</ul>
+
+<p> <b> Correlation Analysis by Puneet Auluck </b> </p>
+<p> Frquency analysis of Categories and Best Picture winners</p>
 
 <p onclick=more_less('explore1') align="center">Show more/Less - Explore 1</p>
 <div id="explore1" style="display:none">
@@ -219,6 +216,7 @@ Check the distribution and conditions to do a t-test or chi square test</p>
 
 <p> In this section, team members used various statistical techniques to determine whether Best
 Film Editing is the best predictor of Best Picture. </p>
+
 
 <p> <b>Interpreting the Chi Square test by Angus Huang</b> </p>
 <p>Calculating chi-Square test to see the if there is any significant difference across the category.
@@ -240,8 +238,8 @@ As p-value is less than 0.05 (0.02623 and 0.008 as shown below), we can conclude
 </div>
 <br>
 <p> <b> Interpretation of Logistic Model Analysis by Edwige Talla Badjio </b> </p>
-<p> A Logistic Model was used to determine if Film Editing, Directing and Cinematography 
-are influentual in predicting Best Picture. 
+<p> A Logistic Model was used to determine if Film Editing, Directing and Cinematography
+are influentual in predicting Best Picture.
 The data we have seems to indicate that “FILM EDITING’ and”DIRECTING" are influential in predicting “BEST PICTURE”. </p>
 <br>
 <p onclick=more_less('logistic') align="center">Show more/Less - logistict</p>
@@ -253,8 +251,12 @@ The data we have seems to indicate that “FILM EDITING’ and”DIRECTING" are 
 <br>
 <h3>
 <a id="conclusion" class="anchor" href="#conclusion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conclusion</h3>
-<br>
-<br>
+
+<p>Based on the statistical test we did on the awards data from 1981-2014 we could conclude that Film Editing is good
+predictor of Best Film, but it's not the single best predictor. There are other categories, for example Film Direction,
+which are good in predicting best picture as well.  The difference in ability to predict the best picture between Film
+Editing and Film Directing is not statistically significant. <b>So, while we could conclude Film Editing is a good
+predictor of best picture we can not conclude that Film Editing is "the best" predictor of Best picture</b></p>
 <br>
 <h3>
 <a id="team" class="anchor" href="#team" aria-hidden="true"><span class="octicon octicon-link"></span></a>Team Participants</h3>

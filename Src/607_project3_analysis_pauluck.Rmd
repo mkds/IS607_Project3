@@ -1,57 +1,134 @@
 ---
-title: "607 Project 3 Analysis"
-author: "Puneet Auluck"
+title: "607 Project 3 - Envelope Please -Analysis"
+author: "IS 607.1 Team"
 date: "October 18, 2015"
 output: html_document
 ---
 
+<span style="color:blue"> **In this project we will explore whether Film Editing is the best predictor of Best Picture.  Chris and Jason Joseph obtained, parsed and transformed text file from awards database to csv file.  This data will be used to do exploratory analysis below.**</span>
 
-### Best Motion Picture did not start until 1944.  
-### I have separated Best Picture/Best Motion Picture into a different data frame and then joined it by matching Category that it also won. The frequency of Categories that matched the Best Picture is plotted
- 
-### According to the plot, 55 Best Pictures also won Directing Category
-### Only 33 Best Pictures won Film Editing as well
+<span style="color:red">**Is Film Editing the best predictor of Best Picture?**</span>
 
-```{r}
+
+
+```{r message=F, warning=F}
 require(tidyr)
 require(dplyr)
 require(knitr)
 require(stringr)
 require(ggplot2)
 
+```
+
+**Load csv File**
+```{r}
 # Load Master File
-academy_awards <- read.csv(file = "c:\\607_proj3\\Data_All_MASTER_edit.csv", stringsAsFactors = FALSE)
+academy_awards <- read.csv(file="https://raw.githubusercontent.com/mkds/IS607_Project3/gh-pages/Data/project_view_1981_2014.csv", stringsAsFactors = FALSE)
 kable(head(academy_awards))
 
+```
+
+**I will separate Best Picture into its own data frame and then join with other like categories below.**
+```{r}
 # Separate Best Picture won into different data frame
-best_picture <- academy_awards %>% select(Year, Category, Nominee, Won.) %>%
-                filter(Won. == "yes", 
+best_picture <- academy_awards %>% 
+                select(Year, Category, Nominee, Won) %>%
+                filter(Won == "yes", 
                        Category %in% c("BEST PICTURE", "BEST MOTION PICTURE")) %>%
                 arrange(Year)
 kable(head(best_picture))
+```
 
+**Create another data frame that contains all Categories except for Best Picture**
+
+```{r}
 # Select Categories and other columns into different data frame
-categories_won <- academy_awards %>% select(Year, Category, Nominee, Won.) %>%
-                  filter(Won. == "yes", 
-                         !(Category %in% c("BEST PICTURE", "BEST MOTION PICTURE"))) %>%
+#separate(Category,c("Category","CategoryType"), sep=" IN A ") %>%
+categories_won <- academy_awards %>% select(Year, Category, Nominee, Won) %>%
+                  filter(Won == "yes", 
+                         !(Category %in% c("BEST PICTURE"))) %>%
                   arrange(Year)
 kable(head(categories_won))
 
+```
+
+**Now we have 2 data frames, Best Picture and Others.  Let us join them based on Nominees**
+```{r}
 # Join the data frames based on the Best Pictures won
 category_picture_joined <- categories_won %>% inner_join(best_picture, by = "Nominee")
+colnames(category_picture_joined)[2] <- "Category"
 kable(head(category_picture_joined))
 
+```
+
+**Now find frequencies of Categories that also won Best Picture**
+```{r}
 # Find the frequence and percent of each category 
 category_freq <- category_picture_joined %>%  
-                 group_by(Category.x) %>% summarise(count = n()) %>%
-                 mutate(percent=round(count/sum(count),digits=2)) %>% arrange(desc(percent))
+                 group_by(Category) %>% summarise(count = n()) %>%
+                 mutate(percent=round(count/sum(count)*100,digits=2)) %>% arrange(desc(percent))
+kable(category_freq)
+```
 
-# How many Best Pictures also won other categories?
-sum(category_freq$count)
 
+
+**Plot to visually see which Category relates to Best Picture.**
+```{r}
 # Plot it
-ggplot(head(category_freq), aes(x=Category.x, y=count)) + geom_bar(stat = "identity")
-
-
+g <- ggplot(category_freq, aes(x=Category, y=percent, fill=Category)) 
+g + geom_bar(stat = "identity") + 
+    coord_flip() + 
+    ggtitle("Best Film Winning Other Categories") +
+    xlab("Categories") +
+    ylab("Frequency(%)")
 
 ```
+
+####Conclusion: <span style="color:blue">**Surprisingly, Best Picture also won DIRECTING category 25 times(37.31%) and FILM EDITING only 16 times! This shows that Film Editing is not the best predictor of Best Picture.**</span>
+
+<span style="color:red">**Is there a coorelation between winning Categories and Best Picture Nominees that did not win?**</span>
+
+**Let's start by separating non-winning Best Picture Nominees.**
+```{r}
+not_so_best_picture <- academy_awards %>% 
+                select(Year, Category, Nominee, Won) %>%
+                filter(Won == "no", 
+                       Category %in% c("BEST PICTURE")) %>%
+                arrange(Year)
+kable(head(not_so_best_picture))
+```
+
+**Join with categories that it won**
+```{r}
+category_picture_joined_2 <- categories_won %>% inner_join(not_so_best_picture, by = "Nominee")
+colnames(category_picture_joined_2)[2] <- "Category"
+kable(head(category_picture_joined_2))
+
+category_freq_2 <- category_picture_joined_2 %>%  
+                 group_by(Category) %>% summarise(count = n()) %>%
+                 mutate(percent=round(count/sum(count)*100,digits=2)) %>% arrange(desc(percent))
+kable(category_freq_2)
+g_2 <- ggplot(category_freq_2, aes(x=Category, y=percent, fill=Category)) 
+g_2 + geom_bar(stat = "identity") + 
+      coord_flip() + 
+      scale_fill_brewer() +
+      ggtitle("Not So Best Film Winning Other Categories") +
+      xlab("Categories") +
+      ylab("Frequency(%)")
+```
+
+####Conclusion: <span style="color:blue">**Based on the chart above, if BEST PICTURE nominee did not win, it has 27.27% chance of atleast winnging CINEMATOGRAPHY.**</span>
+
+Lets plot both together and then compare.
+```{r fig.width=12, fig.height=6}
+g_3 <- ggplot() + geom_line(data = category_freq_2, aes(x = Category, y = percent, color = "Best Picture Non-Winner", group =1))
+g_3 + geom_line(data = category_freq, aes(x = Category, y = percent, color = "Best Picture Winner", group=1)) +
+  ggtitle("Category vs Best Picture Winner and Non-Winner") +
+  xlab('Category') +
+  ylab('frequency(%)') +
+  scale_colour_manual("", 
+                      values = c("Best Picture Winner"="green", "Best Picture Non-Winner"="red")) 
+
+```
+
+#### <span style="color:blue">**Best Picture winner mostly won DIRECTING and Best Picture non-winners won CINEMATOGRAPHY.**</span>
