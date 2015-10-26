@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-   
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script-->
@@ -32,7 +32,7 @@
           <li class="downloads"><a href="https://github.com/mkds/IS607_Project3/zipball/master">ZIP</a></li>
           <li class="downloads"><a href="https://github.com/mkds/IS607_Project3/tarball/master">TAR</a></li>
           <li class="title">DOWNLOADS</li>
-        </nav>                        
+        </nav>
         <div id="test" class="wrapper">
           <h1 align="center">IS607 Project 3</h1>
           <p align="center">The envelope, please</p>
@@ -43,18 +43,18 @@
     <div class="wrapper">
 
       <section>
-       
+
 
         <h3>
 <a id="project-description" class="anchor" href="#project-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Description</h3>
 
-<p> Goal of Project 3 is to determine whether the Best Film Editing category is the best predictor of winning the Best Picture award in the Academy Awards.</p>
+<p> The goal of Project 3 is to determine whether the Best Film Editing category is the best predictor of winning the Best Picture award in the Academy Awards.</p>
 
 <h3>
 <a id="approach" class="anchor" href="#approach" aria-hidden="true"><span class="octicon octicon-link"></span></a>Approach</h3>
 <p>Project approach overall strategy</p>
 
-<p>Our overall strategy to tackle this project was to break it down into smaller tasks and farm out those tasks among the entire team. This project required a high-degree of collaboration and we used the slack.com website to facilitate dynamic, real-time, collaboration. The Github website was used to store and share code, as well as other project documents.  Both of these resources were used in parallel and proved very effective.</p>
+<p>Our overall strategy to tackle this project was to break it down into smaller tasks and farm out those tasks among the entire team. This project required a high-degree of collaboration, so we used the slack.com website to facilitate dynamic, real-time collaboration. The Github website was used to store and share code, as well as other project documents.  Both of these resources were used in parallel and proved very effective.</p>
 <br>
 <br>
 <h3>
@@ -70,19 +70,22 @@
 
 <p> <b> </b>Chanllenges with the Data Sources</b></p>
 
-<p> The team initially tried to use the <b>Wikipedia</b> to collect the necessary data for the project. Although a good general reference, 
-accessing this type of information from Wikipedia had many challenges. For example, the level of detail we needed spanned multiple pages. 
-Additionally, we were not able to verify that all the categories would be included in this data source. A few attempts to review 
-extract and review the Wikipedia data were done, but they proved technically challenging.  
-Due to these challenges, the team agreed not to use this data source.</p>
+<p> The team initially tried to use the <b>Wikipedia</b> to collect the necessary data for the project. Wikipedia seemed to provide the data in a good tabular format. lthough a good general reference,
+accessing this type of information from Wikipedia had many challenges. For example, the level of detail we needed spanned multiple pages.
+Additionally, we were not able to verify that all the categories would be included in this data source. Finally, Wikipedia indicated whether a nominee won the award or not by shading the table cell yellow. This meant that extracting text data from the html table would not include the winner.
+
+Due to these challenges, the team explored other options.</p>
 
 <br>
 
-<p> The team initially tried to use the <b>Wikipedia</b> to collect the necessary data for the project. Although a good general reference, 
-accessing this type of information from Wikipedia had many challenges. For example, the level of detail we needed spanned multiple pages. 
-Additionally, we were not able to verify that all the categories would be included in this data source. A few attempts to review 
-extract and review the Wikipedia data were done, but they proved technically challenging.  
-Due to these challenges, the team agreed not to use this data source.</p>
+<p>A second option was a .csv file found at <a href="https://www.aggdata.com/awards/oscar">this link</a> that provided complete
+nominee and award information through 2010. However, this was insufficient as
+we wanted to the data through 2014, not just 2010. </p>
+
+<br>
+
+<p>Finally we settled on the official Awards database at <a href="http://awardsdatabase.oscars.org/ampas_awards/BasicSearchInput.jsp">oscars.org</a>. This data won out in the end because it was complete, official, and the web pages
+had text character indicators of winners (an asterick). </p>
 
 <br>
 <br>
@@ -142,7 +145,7 @@ Normalization</p>
 <h3>
 <a id="exploratory-analysis" class="anchor" href="#exploratory-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exploratory Analysis</h3>
 
-<p>Tables, graphs.. 
+<p>Tables, graphs..
 Check the distribution and conditions to do a t-test or chi square test</p>
 <br>
 
@@ -173,7 +176,7 @@ Check the distribution and conditions to do a t-test or chi square test</p>
 <a id="statistical-analysis" class="anchor" href="#statistical-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Statistical Analysis</h3>
 
 <p> <b>Interpreting the Chi Square test by Angus Huang</b> </p>
-<p>Calculating chi-Square test to see the if there is any significant difference across the category. 
+<p>Calculating chi-Square test to see the if there is any significant difference across the category.
 As p-value is less than 0.05 (0.02623 and 0.008 as shown below), we can conclude there is significant difference across the category of best pictures won.</p>
 
 <p onclick=more_less('chisquare') align="center">Show more/Less - chisquare</p>
@@ -184,7 +187,7 @@ As p-value is less than 0.05 (0.02623 and 0.008 as shown below), we can conclude
 <br>
 <br>
 <p> <b> Interpretation of two sample t-test results by Diego Diaz </b> </p>
-<p> The two sample T-Test statistic was used to determine if a Film Editing nomination was a good predictor for winning the Best Picture award. Based on the analysis, we can conlude that Film Editing is a better predictor of winning the Best Picture award when compared to the rest of the categories put together. Comparing the Film Editing sample to the to individual categories, such as Directing, Sound Mixing, etc., did not yield the same results.</p> 
+<p> The two sample T-Test statistic was used to determine if a Film Editing nomination was a good predictor for winning the Best Picture award. Based on the analysis, we can conlude that Film Editing is a better predictor of winning the Best Picture award when compared to the rest of the categories put together. Comparing the Film Editing sample to the to individual categories, such as Directing, Sound Mixing, etc., did not yield the same results.</p>
 <br>
 
 <p onclick=more_less('t-test') align="center">Show more/Less - t-test</p>
@@ -232,6 +235,6 @@ As p-value is less than 0.05 (0.02623 and 0.008 as shown below), we can conclude
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
   </body>
 </html>
