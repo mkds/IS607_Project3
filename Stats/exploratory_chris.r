@@ -23,7 +23,7 @@ movies <- read.csv("Data/project_view_year_numeric_CLEANED.csv", stringsAsFactor
 #u_movies <- unique(movies)
 
 bp_winners <- subset(movies, (Category == "BEST PICTURE")  & Won == "yes")
-bp_winners <- rbind(bmp_winners, bp_winners)
+#bp_winners <- rbind(bmp_winners, bp_winners)
 #merged <- merge(bp_winners, movies, by ="Nominee", all.x=TRUE, all.y=FALSE)
 
 #categories <- unique(movies$Category)
@@ -49,7 +49,7 @@ sound_edit_noms <- subset(movies, Category == "SOUND EDITING")
 sound_mix_noms <- subset(movies, Category == "SOUND MIXING")
 
 
-bp_winners_frame <- merge(bp_winners, film_editing_noms, by="Nominee", all.x=TRUE)
+bp_winners_frame <- merge(bp_winners, film_editing_noms, by="Nominee", all.x=TRUE, suffixes = c(".best_picture",".film_editing"))
 bp_winner_since_1981 <- subset(bp_winners_frame, Year.x >= 1981)
 
 #has every bp winner since 1981 been nominated for editing?
@@ -65,3 +65,6 @@ subset(bp_winner_since_1981, is.na(Won.y))
 #write a function to automate linear tasks
 #factor out the cleanup tasks and read in the updated file
 
+#function(nom_vector) {
+ # merge(bp_winners_frame, )
+#}
