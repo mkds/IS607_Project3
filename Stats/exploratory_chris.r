@@ -11,10 +11,10 @@ library(reshape)
 #winners
 
 
-movies <- read.csv("Data/project_view_year_numeric.csv", stringsAsFactors=FALSE)
+movies <- read.csv("Data/project_view_year_numeric_CLEANED.csv", stringsAsFactors=FALSE)
 
 #there's a space at the end of the movies column
-movies$Nominee <- str_replace(movies$Nominee, "\\s$", "")
+#movies$Nominee <- str_replace(movies$Nominee, "\\s$", "")
 
 
 
@@ -23,20 +23,19 @@ movies$Nominee <- str_replace(movies$Nominee, "\\s$", "")
 #u_movies <- unique(movies)
 
 bp_winners <- subset(movies, (Category == "BEST PICTURE")  & Won == "yes")
-bmp_winners <- subset(movies, Category == "BEST MOTION PICTURE" & Won == "yes")
 bp_winners <- rbind(bmp_winners, bp_winners)
-merged <- merge(bp_winners, movies, by ="Nominee", all.x=TRUE, all.y=FALSE)
+#merged <- merge(bp_winners, movies, by ="Nominee", all.x=TRUE, all.y=FALSE)
 
-categories <- unique(movies$Category)
+#categories <- unique(movies$Category)
 
 
-actor_noms <- subset(movies, Category == "ACTOR")
+#actor_noms <- subset(movies, Category == "ACTOR")
 lead_actor <- subset(movies, Category == "ACTOR IN A LEADING ROLE")
-actor_noms <- rbind(actor_noms, lead_actor)
+#actor_noms <- rbind(actor_noms, lead_actor)
 
-actress_noms <- subset(movies, Category == "ACTRESS")
+#actress_noms <- subset(movies, Category == "ACTRESS")
 lead_actress_noms <- subset(movies, Category == "ACTRESS IN A LEADING ROLE")
-actress_noms <- rbind(actress_noms, lead_actress_noms)
+#actress_noms <- rbind(actress_noms, lead_actress_noms)
 
 cinema_noms <- subset(movies, Category == "CINEMATOGRAPHY")
 directing_noms <- subset(movies, Category == "DIRECTING")
@@ -65,3 +64,4 @@ subset(bp_winner_since_1981, is.na(Won.y))
 #clean up the column names
 #write a function to automate linear tasks
 #factor out the cleanup tasks and read in the updated file
+
