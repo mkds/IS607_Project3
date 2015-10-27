@@ -181,6 +181,11 @@ Also, the project assignment included the follwing quote: "since 1981 not a sing
 <p>It turns out this is not quite true. 2014's best picture winner, Birdman, was not nominated for Film Editing. So
 the quote likely came from before 2014.</p>
 
+<b>What about a larger timeframe?</b>
+<br>
+<p>To test the hypothesis that Film Editing was the best predictor of a Best Picture win across a longer timeframe, Brian cleaned and evaluated data dating 
+ <a href="http://rpubs.com/bkreis84/119047">back to 1950</a> and created a <a href="https://github.com/mkds/IS607_Project3/blob/gh-pages/Data/frequencies.csv">frequency csv</a></p>
+
 <br>
 <br>
 <br>
@@ -230,6 +235,23 @@ As p-value is less than 0.05 (0.02623 and 0.008 as shown below), we can conclude
 <p onclick="getElementById('chisquare').style.display = 'none'" align="center">Show Less</p>
 </div>
 <br>
+
+<br>
+<p>Brian used used excel to perform <a href="https://github.com/mkds/IS607_Project3/blob/gh-pages/Stats/Stats%20Project%203%20Chi%20Tests.xlsx">two Chi Square Tests</a>one for all 
+categories and one for specific categories dating back to 1950</p>
+<br>
+<p>It was found that when looking at all categories We have rejected our null hypothesis. The difference found 
+between the number of best picture wins and the number of nominations for specific categories was found to be statistically significant
+at the .001 level. Indicating that there is a very small chance that we could have achieved these differences by chance.  The results would 
+lead us to believe that movies are more likely to be nominated for certain categories and go on to win best picture.</p>
+<br>
+<p>However, when then looking at specific major categories (Actor, Actor in a Supporting Role, Cinematography, Directing and Film Editing), we 
+do not reject the null hypothesis as the differences found between the observed and expected frequencies were not found to be statistically significant at the .05 level.
+Our p-value is .0874, indicating that there is an 8.7% chance that these differences could have occurred by chance. Furthermore, the number of nominations for awards in directing 
+and film editing was identical, with the movie nominated for a directing award having a slightly higher number of best picture wins. </p>
+<br>
+<br>
+
 <p> <b> Interpretation of two sample t-test results by Diego Diaz </b> </p>
 <p> The two sample T-Test statistic was used to determine if a Film Editing nomination was a good predictor for winning the Best Picture award. Based on the analysis, we can conlude that Film Editing is a better predictor of winning the Best Picture award when compared to the rest of the categories put together. Comparing the Film Editing sample to the to individual categories, such as Directing, Sound Mixing, etc., did not yield the same results.</p>
 <br>
